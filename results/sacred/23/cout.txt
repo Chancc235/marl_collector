@@ -1,0 +1,2705 @@
+[INFO 08:55:04] pymarl Running command 'my_main'
+[INFO 08:55:04] pymarl Started run with ID "23"
+[DEBUG 08:55:04] pymarl Starting Heartbeat
+[DEBUG 08:55:04] my_main Started
+[INFO 08:55:04] my_main Experiment Parameters:
+[INFO 08:55:04] my_main 
+
+{   'agent': 'rnn',
+    'alg2agent': {   'controllable': [   0],
+                     'teammate': [   1]},
+    'batch_size': 1024,
+    'batch_size_run': 32,
+    'buffer_cpu_only': True,
+    'buffer_size': 32,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'cur_episodes': 32,
+    'env': 'stag_hunt',
+    'env_args': {   'agent_move_block': [   0,
+                                            1,
+                                            2],
+                    'agent_obs': [   2,
+                                     2],
+                    'capture_action': False,
+                    'capture_action_conditions': [   2,
+                                                     1],
+                    'capture_conditions': [   0,
+                                              1],
+                    'capture_freezes': False,
+                    'capture_terminal': False,
+                    'directed_cone_narrow': True,
+                    'directed_exta_actions': True,
+                    'directed_observations': False,
+                    'episode_limit': 200,
+                    'intersection_global_view': False,
+                    'intersection_unknown': False,
+                    'is_print': False,
+                    'miscapture_punishment': 0,
+                    'mountain_agent_row': -1,
+                    'mountain_slope': 0.0,
+                    'mountain_spawn': False,
+                    'n_agents': 2,
+                    'n_hare': 0,
+                    'n_stags': 4,
+                    'need_render': False,
+                    'observe_ids': False,
+                    'observe_one_hot': False,
+                    'observe_state': False,
+                    'observe_walls': False,
+                    'p_hare_rest': 0.0,
+                    'p_stags_rest': 0.0,
+                    'prevent_cannibalism': True,
+                    'print_caught_prey': False,
+                    'print_frozen_agents': False,
+                    'random_ghosts': False,
+                    'random_ghosts_indicator': False,
+                    'random_ghosts_mul': -1,
+                    'random_ghosts_prob': 0.5,
+                    'remove_frozen': True,
+                    'reward_collision': 0,
+                    'reward_hare': 1,
+                    'reward_stag': 10,
+                    'reward_time': 0,
+                    'state_as_graph': False,
+                    'toroidal': False,
+                    'world_shape': [   10,
+                                       10]},
+    'episodes_per_teammate': 64,
+    'epsilon_anneal_time': 50000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'exp_name': 'stage2_collector',
+    'explore_alg': 'stage2_PP',
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'ind': 'collector',
+    'inner_loop_episodes': 128,
+    'label': 'default_label',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'local_saves_path': 'saves',
+    'log_interval': 100,
+    'lr': 0.0005,
+    'mac': 'basic',
+    'meta_update_times': 8,
+    'n_sub_modules': 4,
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimize_meta': True,
+    'points_per_teammate': 64,
+    'pop': 'collector',
+    'population_alg': 'qmix',
+    'population_directories': 'models/',
+    'population_size': 4,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'meta',
+    'runner_log_interval': 10000,
+    'save_BR': True,
+    'save_BR_episodes': 1024,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_population': False,
+    'save_population_episodes': 2048,
+    'save_replay': False,
+    'seed': 482166867,
+    't_max': 100000,
+    'teammate_alg': 'vdn',
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'test_percent': 0.2,
+    'train_test_split': False,
+    'use_cuda': True,
+    'use_history': False,
+    'use_tensorboard': True,
+    'z_dim': 8}
+
+[INFO 08:55:04] my_main ================ MetaEpoch: 0 ================
+[INFO 08:55:04] my_main Time passed: 0 seconds
+[INFO 08:55:04] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:04] my_main Chosen Teammate: 0  2
+[INFO 08:55:07] root Runing batch
+[INFO 08:55:11] root Get batch
+[INFO 08:55:11] root episode 0 Inserted
+[INFO 08:55:11] my_main ================ MetaEpoch: 32 ================
+[INFO 08:55:11] my_main Time passed: 6 seconds
+[INFO 08:55:11] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:11] my_main Chosen Teammate: 1  0
+[INFO 08:55:11] root Runing batch
+[INFO 08:55:15] root Get batch
+[INFO 08:55:15] root episode 32 Inserted
+[INFO 08:55:15] my_main ================ MetaEpoch: 64 ================
+[INFO 08:55:15] my_main Time passed: 10 seconds
+[INFO 08:55:15] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:15] my_main Chosen Teammate: 2  1
+[INFO 08:55:15] root Runing batch
+[INFO 08:55:19] root Get batch
+[INFO 08:55:19] root episode 64 Inserted
+[INFO 08:55:19] my_main ================ MetaEpoch: 96 ================
+[INFO 08:55:19] my_main Time passed: 14 seconds
+[INFO 08:55:19] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:19] my_main Chosen Teammate: 3  3
+[INFO 08:55:19] root Runing batch
+[INFO 08:55:23] root Get batch
+[INFO 08:55:23] root episode 96 Inserted
+[INFO 08:55:23] my_main ================ MetaEpoch: 128 ================
+[INFO 08:55:23] my_main Time passed: 18 seconds
+[INFO 08:55:23] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:23] my_main Chosen Teammate: 0  2
+[INFO 08:55:23] root Runing batch
+[INFO 08:55:26] root Get batch
+[INFO 08:55:26] root episode 128 Inserted
+[INFO 08:55:26] my_main ================ MetaEpoch: 160 ================
+[INFO 08:55:26] my_main Time passed: 22 seconds
+[INFO 08:55:26] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:26] my_main Chosen Teammate: 1  0
+[INFO 08:55:26] root Runing batch
+[INFO 08:55:30] root Get batch
+[INFO 08:55:30] root episode 160 Inserted
+[INFO 08:55:30] my_main ================ MetaEpoch: 192 ================
+[INFO 08:55:30] my_main Time passed: 25 seconds
+[INFO 08:55:30] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:30] my_main Chosen Teammate: 2  1
+[INFO 08:55:30] root Runing batch
+[INFO 08:55:34] root Get batch
+[INFO 08:55:34] root episode 192 Inserted
+[INFO 08:55:34] my_main ================ MetaEpoch: 224 ================
+[INFO 08:55:34] my_main Time passed: 29 seconds
+[INFO 08:55:34] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:34] my_main Chosen Teammate: 3  3
+[INFO 08:55:34] root Runing batch
+[INFO 08:55:37] root Get batch
+[INFO 08:55:37] root episode 224 Inserted
+[INFO 08:55:37] my_main ================ MetaEpoch: 256 ================
+[INFO 08:55:37] my_main Time passed: 32 seconds
+[INFO 08:55:37] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:37] my_main Chosen Teammate: 0  2
+[INFO 08:55:37] root Runing batch
+[INFO 08:55:41] root Get batch
+[INFO 08:55:41] root episode 256 Inserted
+[INFO 08:55:41] my_main ================ MetaEpoch: 288 ================
+[INFO 08:55:41] my_main Time passed: 36 seconds
+[INFO 08:55:41] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:41] my_main Chosen Teammate: 1  0
+[INFO 08:55:41] root Runing batch
+[INFO 08:55:44] root Get batch
+[INFO 08:55:44] root episode 288 Inserted
+[INFO 08:55:44] my_main ================ MetaEpoch: 320 ================
+[INFO 08:55:44] my_main Time passed: 39 seconds
+[INFO 08:55:44] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:44] my_main Chosen Teammate: 2  1
+[INFO 08:55:44] root Runing batch
+[INFO 08:55:48] root Get batch
+[INFO 08:55:48] root episode 320 Inserted
+[INFO 08:55:48] my_main ================ MetaEpoch: 352 ================
+[INFO 08:55:48] my_main Time passed: 43 seconds
+[INFO 08:55:48] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:48] my_main Chosen Teammate: 3  3
+[INFO 08:55:48] root Runing batch
+[INFO 08:55:52] root Get batch
+[INFO 08:55:52] root episode 352 Inserted
+[INFO 08:55:52] my_main ================ MetaEpoch: 384 ================
+[INFO 08:55:52] my_main Time passed: 47 seconds
+[INFO 08:55:52] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:52] my_main Chosen Teammate: 0  2
+[INFO 08:55:52] root Runing batch
+[INFO 08:55:55] root Get batch
+[INFO 08:55:55] root episode 384 Inserted
+[INFO 08:55:55] my_main ================ MetaEpoch: 416 ================
+[INFO 08:55:55] my_main Time passed: 50 seconds
+[INFO 08:55:55] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:55] my_main Chosen Teammate: 1  0
+[INFO 08:55:55] root Runing batch
+[INFO 08:55:59] root Get batch
+[INFO 08:55:59] root episode 416 Inserted
+[INFO 08:55:59] my_main ================ MetaEpoch: 448 ================
+[INFO 08:55:59] my_main Time passed: 54 seconds
+[INFO 08:55:59] my_main Status: [0, 0, 0, 0]
+[INFO 08:55:59] my_main Chosen Teammate: 2  1
+[INFO 08:55:59] root Runing batch
+[INFO 08:56:02] root Get batch
+[INFO 08:56:02] root episode 448 Inserted
+[INFO 08:56:02] my_main ================ MetaEpoch: 480 ================
+[INFO 08:56:02] my_main Time passed: 58 seconds
+[INFO 08:56:02] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:02] my_main Chosen Teammate: 3  3
+[INFO 08:56:02] root Runing batch
+[INFO 08:56:06] root Get batch
+[INFO 08:56:06] root episode 480 Inserted
+[INFO 08:56:06] my_main ================ MetaEpoch: 512 ================
+[INFO 08:56:06] my_main Time passed: 1 minutes, 1 seconds
+[INFO 08:56:06] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:06] my_main Chosen Teammate: 0  2
+[INFO 08:56:06] root Runing batch
+[INFO 08:56:10] root Get batch
+[INFO 08:56:10] root episode 512 Inserted
+[INFO 08:56:10] my_main ================ MetaEpoch: 544 ================
+[INFO 08:56:10] my_main Time passed: 1 minutes, 5 seconds
+[INFO 08:56:10] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:10] my_main Chosen Teammate: 1  0
+[INFO 08:56:10] root Runing batch
+[INFO 08:56:14] root Get batch
+[INFO 08:56:14] root episode 544 Inserted
+[INFO 08:56:14] my_main ================ MetaEpoch: 576 ================
+[INFO 08:56:14] my_main Time passed: 1 minutes, 9 seconds
+[INFO 08:56:14] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:14] my_main Chosen Teammate: 2  1
+[INFO 08:56:14] root Runing batch
+[INFO 08:56:18] root Get batch
+[INFO 08:56:18] root episode 576 Inserted
+[INFO 08:56:18] my_main ================ MetaEpoch: 608 ================
+[INFO 08:56:18] my_main Time passed: 1 minutes, 13 seconds
+[INFO 08:56:18] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:18] my_main Chosen Teammate: 3  3
+[INFO 08:56:18] root Runing batch
+[INFO 08:56:21] root Get batch
+[INFO 08:56:21] root episode 608 Inserted
+[INFO 08:56:21] my_main ================ MetaEpoch: 640 ================
+[INFO 08:56:21] my_main Time passed: 1 minutes, 17 seconds
+[INFO 08:56:21] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:21] my_main Chosen Teammate: 0  2
+[INFO 08:56:21] root Runing batch
+[INFO 08:56:25] root Get batch
+[INFO 08:56:25] root episode 640 Inserted
+[INFO 08:56:25] my_main ================ MetaEpoch: 672 ================
+[INFO 08:56:25] my_main Time passed: 1 minutes, 20 seconds
+[INFO 08:56:25] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:25] my_main Chosen Teammate: 1  0
+[INFO 08:56:25] root Runing batch
+[INFO 08:56:29] root Get batch
+[INFO 08:56:29] root episode 672 Inserted
+[INFO 08:56:29] my_main ================ MetaEpoch: 704 ================
+[INFO 08:56:29] my_main Time passed: 1 minutes, 24 seconds
+[INFO 08:56:29] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:29] my_main Chosen Teammate: 2  1
+[INFO 08:56:29] root Runing batch
+[INFO 08:56:32] root Get batch
+[INFO 08:56:32] root episode 704 Inserted
+[INFO 08:56:32] my_main ================ MetaEpoch: 736 ================
+[INFO 08:56:32] my_main Time passed: 1 minutes, 27 seconds
+[INFO 08:56:32] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:32] my_main Chosen Teammate: 3  3
+[INFO 08:56:32] root Runing batch
+[INFO 08:56:36] root Get batch
+[INFO 08:56:36] root episode 736 Inserted
+[INFO 08:56:36] my_main ================ MetaEpoch: 768 ================
+[INFO 08:56:36] my_main Time passed: 1 minutes, 31 seconds
+[INFO 08:56:36] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:36] my_main Chosen Teammate: 0  2
+[INFO 08:56:36] root Runing batch
+[INFO 08:56:40] root Get batch
+[INFO 08:56:40] root episode 768 Inserted
+[INFO 08:56:40] my_main ================ MetaEpoch: 800 ================
+[INFO 08:56:40] my_main Time passed: 1 minutes, 35 seconds
+[INFO 08:56:40] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:40] my_main Chosen Teammate: 1  0
+[INFO 08:56:40] root Runing batch
+[INFO 08:56:43] root Get batch
+[INFO 08:56:43] root episode 800 Inserted
+[INFO 08:56:43] my_main ================ MetaEpoch: 832 ================
+[INFO 08:56:43] my_main Time passed: 1 minutes, 39 seconds
+[INFO 08:56:43] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:43] my_main Chosen Teammate: 2  1
+[INFO 08:56:43] root Runing batch
+[INFO 08:56:47] root Get batch
+[INFO 08:56:47] root episode 832 Inserted
+[INFO 08:56:47] my_main ================ MetaEpoch: 864 ================
+[INFO 08:56:47] my_main Time passed: 1 minutes, 42 seconds
+[INFO 08:56:47] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:47] my_main Chosen Teammate: 3  3
+[INFO 08:56:47] root Runing batch
+[INFO 08:56:51] root Get batch
+[INFO 08:56:51] root episode 864 Inserted
+[INFO 08:56:51] my_main ================ MetaEpoch: 896 ================
+[INFO 08:56:51] my_main Time passed: 1 minutes, 46 seconds
+[INFO 08:56:51] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:51] my_main Chosen Teammate: 0  2
+[INFO 08:56:51] root Runing batch
+[INFO 08:56:54] root Get batch
+[INFO 08:56:54] root episode 896 Inserted
+[INFO 08:56:54] my_main ================ MetaEpoch: 928 ================
+[INFO 08:56:54] my_main Time passed: 1 minutes, 50 seconds
+[INFO 08:56:54] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:54] my_main Chosen Teammate: 1  0
+[INFO 08:56:54] root Runing batch
+[INFO 08:56:58] root Get batch
+[INFO 08:56:58] root episode 928 Inserted
+[INFO 08:56:58] my_main ================ MetaEpoch: 960 ================
+[INFO 08:56:58] my_main Time passed: 1 minutes, 53 seconds
+[INFO 08:56:58] my_main Status: [0, 0, 0, 0]
+[INFO 08:56:58] my_main Chosen Teammate: 2  1
+[INFO 08:56:58] root Runing batch
+[INFO 08:57:02] root Get batch
+[INFO 08:57:02] root episode 960 Inserted
+[INFO 08:57:02] my_main ================ MetaEpoch: 992 ================
+[INFO 08:57:02] my_main Time passed: 1 minutes, 57 seconds
+[INFO 08:57:02] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:02] my_main Chosen Teammate: 3  3
+[INFO 08:57:02] root Runing batch
+[INFO 08:57:06] root Get batch
+[INFO 08:57:06] root episode 992 Inserted
+[INFO 08:57:07] root Trajectories saved to saves/buffer_1024.pkl.
+[INFO 08:57:07] my_main ================ MetaEpoch: 1024 ================
+[INFO 08:57:07] my_main Time passed: 2 minutes, 3 seconds
+[INFO 08:57:07] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:07] my_main Chosen Teammate: 0  2
+[INFO 08:57:07] root Runing batch
+[INFO 08:57:11] root Get batch
+[INFO 08:57:11] root episode 1024 Inserted
+[INFO 08:57:11] my_main ================ MetaEpoch: 1056 ================
+[INFO 08:57:11] my_main Time passed: 2 minutes, 6 seconds
+[INFO 08:57:11] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:11] my_main Chosen Teammate: 1  0
+[INFO 08:57:11] root Runing batch
+[INFO 08:57:15] root Get batch
+[INFO 08:57:15] root episode 1056 Inserted
+[INFO 08:57:15] my_main ================ MetaEpoch: 1088 ================
+[INFO 08:57:15] my_main Time passed: 2 minutes, 10 seconds
+[INFO 08:57:15] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:15] my_main Chosen Teammate: 2  1
+[INFO 08:57:15] root Runing batch
+[INFO 08:57:18] root Get batch
+[INFO 08:57:18] root episode 1088 Inserted
+[INFO 08:57:18] my_main ================ MetaEpoch: 1120 ================
+[INFO 08:57:18] my_main Time passed: 2 minutes, 14 seconds
+[INFO 08:57:18] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:18] my_main Chosen Teammate: 3  3
+[INFO 08:57:18] root Runing batch
+[INFO 08:57:22] root Get batch
+[INFO 08:57:22] root episode 1120 Inserted
+[INFO 08:57:22] my_main ================ MetaEpoch: 1152 ================
+[INFO 08:57:22] my_main Time passed: 2 minutes, 17 seconds
+[INFO 08:57:22] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:22] my_main Chosen Teammate: 0  2
+[INFO 08:57:22] root Runing batch
+[INFO 08:57:26] root Get batch
+[INFO 08:57:26] root episode 1152 Inserted
+[INFO 08:57:26] my_main ================ MetaEpoch: 1184 ================
+[INFO 08:57:26] my_main Time passed: 2 minutes, 21 seconds
+[INFO 08:57:26] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:26] my_main Chosen Teammate: 1  0
+[INFO 08:57:26] root Runing batch
+[INFO 08:57:29] root Get batch
+[INFO 08:57:29] root episode 1184 Inserted
+[INFO 08:57:29] my_main ================ MetaEpoch: 1216 ================
+[INFO 08:57:29] my_main Time passed: 2 minutes, 24 seconds
+[INFO 08:57:29] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:29] my_main Chosen Teammate: 2  1
+[INFO 08:57:29] root Runing batch
+[INFO 08:57:33] root Get batch
+[INFO 08:57:33] root episode 1216 Inserted
+[INFO 08:57:33] my_main ================ MetaEpoch: 1248 ================
+[INFO 08:57:33] my_main Time passed: 2 minutes, 28 seconds
+[INFO 08:57:33] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:33] my_main Chosen Teammate: 3  3
+[INFO 08:57:33] root Runing batch
+[INFO 08:57:36] root Get batch
+[INFO 08:57:36] root episode 1248 Inserted
+[INFO 08:57:36] my_main ================ MetaEpoch: 1280 ================
+[INFO 08:57:36] my_main Time passed: 2 minutes, 32 seconds
+[INFO 08:57:36] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:36] my_main Chosen Teammate: 0  2
+[INFO 08:57:36] root Runing batch
+[INFO 08:57:40] root Get batch
+[INFO 08:57:40] root episode 1280 Inserted
+[INFO 08:57:40] my_main ================ MetaEpoch: 1312 ================
+[INFO 08:57:40] my_main Time passed: 2 minutes, 35 seconds
+[INFO 08:57:40] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:40] my_main Chosen Teammate: 1  0
+[INFO 08:57:40] root Runing batch
+[INFO 08:57:44] root Get batch
+[INFO 08:57:44] root episode 1312 Inserted
+[INFO 08:57:44] my_main ================ MetaEpoch: 1344 ================
+[INFO 08:57:44] my_main Time passed: 2 minutes, 39 seconds
+[INFO 08:57:44] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:44] my_main Chosen Teammate: 2  1
+[INFO 08:57:44] root Runing batch
+[INFO 08:57:48] root Get batch
+[INFO 08:57:48] root episode 1344 Inserted
+[INFO 08:57:48] my_main ================ MetaEpoch: 1376 ================
+[INFO 08:57:48] my_main Time passed: 2 minutes, 43 seconds
+[INFO 08:57:48] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:48] my_main Chosen Teammate: 3  3
+[INFO 08:57:48] root Runing batch
+[INFO 08:57:51] root Get batch
+[INFO 08:57:51] root episode 1376 Inserted
+[INFO 08:57:51] my_main ================ MetaEpoch: 1408 ================
+[INFO 08:57:51] my_main Time passed: 2 minutes, 46 seconds
+[INFO 08:57:51] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:51] my_main Chosen Teammate: 0  2
+[INFO 08:57:51] root Runing batch
+[INFO 08:57:55] root Get batch
+[INFO 08:57:55] root episode 1408 Inserted
+[INFO 08:57:55] my_main ================ MetaEpoch: 1440 ================
+[INFO 08:57:55] my_main Time passed: 2 minutes, 50 seconds
+[INFO 08:57:55] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:55] my_main Chosen Teammate: 1  0
+[INFO 08:57:55] root Runing batch
+[INFO 08:57:58] root Get batch
+[INFO 08:57:58] root episode 1440 Inserted
+[INFO 08:57:58] my_main ================ MetaEpoch: 1472 ================
+[INFO 08:57:58] my_main Time passed: 2 minutes, 54 seconds
+[INFO 08:57:58] my_main Status: [0, 0, 0, 0]
+[INFO 08:57:58] my_main Chosen Teammate: 2  1
+[INFO 08:57:58] root Runing batch
+[INFO 08:58:02] root Get batch
+[INFO 08:58:02] root episode 1472 Inserted
+[INFO 08:58:02] my_main ================ MetaEpoch: 1504 ================
+[INFO 08:58:02] my_main Time passed: 2 minutes, 57 seconds
+[INFO 08:58:02] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:02] my_main Chosen Teammate: 3  3
+[INFO 08:58:02] root Runing batch
+[INFO 08:58:06] root Get batch
+[INFO 08:58:06] root episode 1504 Inserted
+[INFO 08:58:06] my_main ================ MetaEpoch: 1536 ================
+[INFO 08:58:06] my_main Time passed: 3 minutes, 1 seconds
+[INFO 08:58:06] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:06] my_main Chosen Teammate: 0  2
+[INFO 08:58:06] root Runing batch
+[INFO 08:58:09] root Get batch
+[INFO 08:58:09] root episode 1536 Inserted
+[INFO 08:58:09] my_main ================ MetaEpoch: 1568 ================
+[INFO 08:58:09] my_main Time passed: 3 minutes, 4 seconds
+[INFO 08:58:09] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:09] my_main Chosen Teammate: 1  0
+[INFO 08:58:09] root Runing batch
+[INFO 08:58:13] root Get batch
+[INFO 08:58:13] root episode 1568 Inserted
+[INFO 08:58:13] my_main ================ MetaEpoch: 1600 ================
+[INFO 08:58:13] my_main Time passed: 3 minutes, 8 seconds
+[INFO 08:58:13] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:13] my_main Chosen Teammate: 2  1
+[INFO 08:58:13] root Runing batch
+[INFO 08:58:16] root Get batch
+[INFO 08:58:16] root episode 1600 Inserted
+[INFO 08:58:16] my_main ================ MetaEpoch: 1632 ================
+[INFO 08:58:16] my_main Time passed: 3 minutes, 11 seconds
+[INFO 08:58:16] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:16] my_main Chosen Teammate: 3  3
+[INFO 08:58:16] root Runing batch
+[INFO 08:58:20] root Get batch
+[INFO 08:58:20] root episode 1632 Inserted
+[INFO 08:58:20] my_main ================ MetaEpoch: 1664 ================
+[INFO 08:58:20] my_main Time passed: 3 minutes, 15 seconds
+[INFO 08:58:20] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:20] my_main Chosen Teammate: 0  2
+[INFO 08:58:20] root Runing batch
+[INFO 08:58:23] root Get batch
+[INFO 08:58:23] root episode 1664 Inserted
+[INFO 08:58:23] my_main ================ MetaEpoch: 1696 ================
+[INFO 08:58:23] my_main Time passed: 3 minutes, 19 seconds
+[INFO 08:58:23] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:23] my_main Chosen Teammate: 1  0
+[INFO 08:58:23] root Runing batch
+[INFO 08:58:27] root Get batch
+[INFO 08:58:27] root episode 1696 Inserted
+[INFO 08:58:27] my_main ================ MetaEpoch: 1728 ================
+[INFO 08:58:27] my_main Time passed: 3 minutes, 22 seconds
+[INFO 08:58:27] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:27] my_main Chosen Teammate: 2  1
+[INFO 08:58:27] root Runing batch
+[INFO 08:58:30] root Get batch
+[INFO 08:58:30] root episode 1728 Inserted
+[INFO 08:58:30] my_main ================ MetaEpoch: 1760 ================
+[INFO 08:58:30] my_main Time passed: 3 minutes, 26 seconds
+[INFO 08:58:30] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:30] my_main Chosen Teammate: 3  3
+[INFO 08:58:30] root Runing batch
+[INFO 08:58:34] root Get batch
+[INFO 08:58:34] root episode 1760 Inserted
+[INFO 08:58:34] my_main ================ MetaEpoch: 1792 ================
+[INFO 08:58:34] my_main Time passed: 3 minutes, 29 seconds
+[INFO 08:58:34] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:34] my_main Chosen Teammate: 0  2
+[INFO 08:58:34] root Runing batch
+[INFO 08:58:38] root Get batch
+[INFO 08:58:38] root episode 1792 Inserted
+[INFO 08:58:38] my_main ================ MetaEpoch: 1824 ================
+[INFO 08:58:38] my_main Time passed: 3 minutes, 33 seconds
+[INFO 08:58:38] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:38] my_main Chosen Teammate: 1  0
+[INFO 08:58:38] root Runing batch
+[INFO 08:58:42] root Get batch
+[INFO 08:58:42] root episode 1824 Inserted
+[INFO 08:58:42] my_main ================ MetaEpoch: 1856 ================
+[INFO 08:58:42] my_main Time passed: 3 minutes, 37 seconds
+[INFO 08:58:42] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:42] my_main Chosen Teammate: 2  1
+[INFO 08:58:42] root Runing batch
+[INFO 08:58:45] root Get batch
+[INFO 08:58:45] root episode 1856 Inserted
+[INFO 08:58:45] my_main ================ MetaEpoch: 1888 ================
+[INFO 08:58:45] my_main Time passed: 3 minutes, 41 seconds
+[INFO 08:58:45] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:45] my_main Chosen Teammate: 3  3
+[INFO 08:58:45] root Runing batch
+[INFO 08:58:49] root Get batch
+[INFO 08:58:49] root episode 1888 Inserted
+[INFO 08:58:49] my_main ================ MetaEpoch: 1920 ================
+[INFO 08:58:49] my_main Time passed: 3 minutes, 44 seconds
+[INFO 08:58:49] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:49] my_main Chosen Teammate: 0  2
+[INFO 08:58:49] root Runing batch
+[INFO 08:58:53] root Get batch
+[INFO 08:58:53] root episode 1920 Inserted
+[INFO 08:58:53] my_main ================ MetaEpoch: 1952 ================
+[INFO 08:58:53] my_main Time passed: 3 minutes, 48 seconds
+[INFO 08:58:53] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:53] my_main Chosen Teammate: 1  0
+[INFO 08:58:53] root Runing batch
+[INFO 08:58:56] root Get batch
+[INFO 08:58:57] root episode 1952 Inserted
+[INFO 08:58:57] my_main ================ MetaEpoch: 1984 ================
+[INFO 08:58:57] my_main Time passed: 3 minutes, 52 seconds
+[INFO 08:58:57] my_main Status: [0, 0, 0, 0]
+[INFO 08:58:57] my_main Chosen Teammate: 2  1
+[INFO 08:58:57] root Runing batch
+[INFO 08:59:00] root Get batch
+[INFO 08:59:00] root episode 1984 Inserted
+[INFO 08:59:00] my_main ================ MetaEpoch: 2016 ================
+[INFO 08:59:00] my_main Time passed: 3 minutes, 56 seconds
+[INFO 08:59:00] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:00] my_main Chosen Teammate: 3  3
+[INFO 08:59:00] root Runing batch
+[INFO 08:59:04] root Get batch
+[INFO 08:59:04] root episode 2016 Inserted
+[INFO 08:59:06] root Trajectories saved to saves/buffer_2048.pkl.
+[INFO 08:59:06] my_main ================ MetaEpoch: 2048 ================
+[INFO 08:59:06] my_main Time passed: 4 minutes, 1 seconds
+[INFO 08:59:06] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:06] my_main Chosen Teammate: 0  2
+[INFO 08:59:06] root Runing batch
+[INFO 08:59:10] root Get batch
+[INFO 08:59:10] root episode 2048 Inserted
+[INFO 08:59:10] my_main ================ MetaEpoch: 2080 ================
+[INFO 08:59:10] my_main Time passed: 4 minutes, 6 seconds
+[INFO 08:59:10] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:10] my_main Chosen Teammate: 1  0
+[INFO 08:59:10] root Runing batch
+[INFO 08:59:15] root Get batch
+[INFO 08:59:15] root episode 2080 Inserted
+[INFO 08:59:15] my_main ================ MetaEpoch: 2112 ================
+[INFO 08:59:15] my_main Time passed: 4 minutes, 10 seconds
+[INFO 08:59:15] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:15] my_main Chosen Teammate: 2  1
+[INFO 08:59:15] root Runing batch
+[INFO 08:59:19] root Get batch
+[INFO 08:59:19] root episode 2112 Inserted
+[INFO 08:59:19] my_main ================ MetaEpoch: 2144 ================
+[INFO 08:59:19] my_main Time passed: 4 minutes, 14 seconds
+[INFO 08:59:19] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:19] my_main Chosen Teammate: 3  3
+[INFO 08:59:19] root Runing batch
+[INFO 08:59:23] root Get batch
+[INFO 08:59:23] root episode 2144 Inserted
+[INFO 08:59:23] my_main ================ MetaEpoch: 2176 ================
+[INFO 08:59:23] my_main Time passed: 4 minutes, 18 seconds
+[INFO 08:59:23] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:23] my_main Chosen Teammate: 0  2
+[INFO 08:59:23] root Runing batch
+[INFO 08:59:27] root Get batch
+[INFO 08:59:27] root episode 2176 Inserted
+[INFO 08:59:27] my_main ================ MetaEpoch: 2208 ================
+[INFO 08:59:27] my_main Time passed: 4 minutes, 23 seconds
+[INFO 08:59:27] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:27] my_main Chosen Teammate: 1  0
+[INFO 08:59:27] root Runing batch
+[INFO 08:59:31] root Get batch
+[INFO 08:59:31] root episode 2208 Inserted
+[INFO 08:59:31] my_main ================ MetaEpoch: 2240 ================
+[INFO 08:59:31] my_main Time passed: 4 minutes, 26 seconds
+[INFO 08:59:31] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:31] my_main Chosen Teammate: 2  1
+[INFO 08:59:31] root Runing batch
+[INFO 08:59:35] root Get batch
+[INFO 08:59:35] root episode 2240 Inserted
+[INFO 08:59:35] my_main ================ MetaEpoch: 2272 ================
+[INFO 08:59:35] my_main Time passed: 4 minutes, 30 seconds
+[INFO 08:59:35] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:35] my_main Chosen Teammate: 3  3
+[INFO 08:59:35] root Runing batch
+[INFO 08:59:38] root Get batch
+[INFO 08:59:38] root episode 2272 Inserted
+[INFO 08:59:38] my_main ================ MetaEpoch: 2304 ================
+[INFO 08:59:38] my_main Time passed: 4 minutes, 34 seconds
+[INFO 08:59:38] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:38] my_main Chosen Teammate: 0  2
+[INFO 08:59:38] root Runing batch
+[INFO 08:59:42] root Get batch
+[INFO 08:59:42] root episode 2304 Inserted
+[INFO 08:59:42] my_main ================ MetaEpoch: 2336 ================
+[INFO 08:59:42] my_main Time passed: 4 minutes, 37 seconds
+[INFO 08:59:42] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:42] my_main Chosen Teammate: 1  0
+[INFO 08:59:42] root Runing batch
+[INFO 08:59:46] root Get batch
+[INFO 08:59:46] root episode 2336 Inserted
+[INFO 08:59:46] my_main ================ MetaEpoch: 2368 ================
+[INFO 08:59:46] my_main Time passed: 4 minutes, 41 seconds
+[INFO 08:59:46] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:46] my_main Chosen Teammate: 2  1
+[INFO 08:59:46] root Runing batch
+[INFO 08:59:49] root Get batch
+[INFO 08:59:50] root episode 2368 Inserted
+[INFO 08:59:50] my_main ================ MetaEpoch: 2400 ================
+[INFO 08:59:50] my_main Time passed: 4 minutes, 45 seconds
+[INFO 08:59:50] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:50] my_main Chosen Teammate: 3  3
+[INFO 08:59:50] root Runing batch
+[INFO 08:59:53] root Get batch
+[INFO 08:59:53] root episode 2400 Inserted
+[INFO 08:59:53] my_main ================ MetaEpoch: 2432 ================
+[INFO 08:59:53] my_main Time passed: 4 minutes, 49 seconds
+[INFO 08:59:53] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:53] my_main Chosen Teammate: 0  2
+[INFO 08:59:53] root Runing batch
+[INFO 08:59:57] root Get batch
+[INFO 08:59:57] root episode 2432 Inserted
+[INFO 08:59:57] my_main ================ MetaEpoch: 2464 ================
+[INFO 08:59:57] my_main Time passed: 4 minutes, 52 seconds
+[INFO 08:59:57] my_main Status: [0, 0, 0, 0]
+[INFO 08:59:57] my_main Chosen Teammate: 1  0
+[INFO 08:59:57] root Runing batch
+[INFO 09:00:01] root Get batch
+[INFO 09:00:01] root episode 2464 Inserted
+[INFO 09:00:01] my_main ================ MetaEpoch: 2496 ================
+[INFO 09:00:01] my_main Time passed: 4 minutes, 56 seconds
+[INFO 09:00:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:01] my_main Chosen Teammate: 2  1
+[INFO 09:00:01] root Runing batch
+[INFO 09:00:04] root Get batch
+[INFO 09:00:04] root episode 2496 Inserted
+[INFO 09:00:04] my_main ================ MetaEpoch: 2528 ================
+[INFO 09:00:04] my_main Time passed: 4 minutes, 59 seconds
+[INFO 09:00:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:04] my_main Chosen Teammate: 3  3
+[INFO 09:00:04] root Runing batch
+[INFO 09:00:08] root Get batch
+[INFO 09:00:08] root episode 2528 Inserted
+[INFO 09:00:08] my_main ================ MetaEpoch: 2560 ================
+[INFO 09:00:08] my_main Time passed: 5 minutes, 3 seconds
+[INFO 09:00:08] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:08] my_main Chosen Teammate: 0  2
+[INFO 09:00:08] root Runing batch
+[INFO 09:00:11] root Get batch
+[INFO 09:00:11] root episode 2560 Inserted
+[INFO 09:00:11] my_main ================ MetaEpoch: 2592 ================
+[INFO 09:00:11] my_main Time passed: 5 minutes, 7 seconds
+[INFO 09:00:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:11] my_main Chosen Teammate: 1  0
+[INFO 09:00:11] root Runing batch
+[INFO 09:00:15] root Get batch
+[INFO 09:00:15] root episode 2592 Inserted
+[INFO 09:00:15] my_main ================ MetaEpoch: 2624 ================
+[INFO 09:00:15] my_main Time passed: 5 minutes, 10 seconds
+[INFO 09:00:15] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:15] my_main Chosen Teammate: 2  1
+[INFO 09:00:15] root Runing batch
+[INFO 09:00:19] root Get batch
+[INFO 09:00:19] root episode 2624 Inserted
+[INFO 09:00:19] my_main ================ MetaEpoch: 2656 ================
+[INFO 09:00:19] my_main Time passed: 5 minutes, 14 seconds
+[INFO 09:00:19] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:19] my_main Chosen Teammate: 3  3
+[INFO 09:00:19] root Runing batch
+[INFO 09:00:23] root Get batch
+[INFO 09:00:23] root episode 2656 Inserted
+[INFO 09:00:23] my_main ================ MetaEpoch: 2688 ================
+[INFO 09:00:23] my_main Time passed: 5 minutes, 18 seconds
+[INFO 09:00:23] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:23] my_main Chosen Teammate: 0  2
+[INFO 09:00:23] root Runing batch
+[INFO 09:00:26] root Get batch
+[INFO 09:00:26] root episode 2688 Inserted
+[INFO 09:00:26] my_main ================ MetaEpoch: 2720 ================
+[INFO 09:00:26] my_main Time passed: 5 minutes, 21 seconds
+[INFO 09:00:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:26] my_main Chosen Teammate: 1  0
+[INFO 09:00:26] root Runing batch
+[INFO 09:00:30] root Get batch
+[INFO 09:00:30] root episode 2720 Inserted
+[INFO 09:00:30] my_main ================ MetaEpoch: 2752 ================
+[INFO 09:00:30] my_main Time passed: 5 minutes, 25 seconds
+[INFO 09:00:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:30] my_main Chosen Teammate: 2  1
+[INFO 09:00:30] root Runing batch
+[INFO 09:00:34] root Get batch
+[INFO 09:00:34] root episode 2752 Inserted
+[INFO 09:00:34] my_main ================ MetaEpoch: 2784 ================
+[INFO 09:00:34] my_main Time passed: 5 minutes, 29 seconds
+[INFO 09:00:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:34] my_main Chosen Teammate: 3  3
+[INFO 09:00:34] root Runing batch
+[INFO 09:00:37] root Get batch
+[INFO 09:00:37] root episode 2784 Inserted
+[INFO 09:00:37] my_main ================ MetaEpoch: 2816 ================
+[INFO 09:00:37] my_main Time passed: 5 minutes, 32 seconds
+[INFO 09:00:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:37] my_main Chosen Teammate: 0  2
+[INFO 09:00:37] root Runing batch
+[INFO 09:00:41] root Get batch
+[INFO 09:00:41] root episode 2816 Inserted
+[INFO 09:00:41] my_main ================ MetaEpoch: 2848 ================
+[INFO 09:00:41] my_main Time passed: 5 minutes, 36 seconds
+[INFO 09:00:41] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:41] my_main Chosen Teammate: 1  0
+[INFO 09:00:41] root Runing batch
+[INFO 09:00:44] root Get batch
+[INFO 09:00:44] root episode 2848 Inserted
+[INFO 09:00:44] my_main ================ MetaEpoch: 2880 ================
+[INFO 09:00:44] my_main Time passed: 5 minutes, 39 seconds
+[INFO 09:00:44] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:44] my_main Chosen Teammate: 2  1
+[INFO 09:00:44] root Runing batch
+[INFO 09:00:48] root Get batch
+[INFO 09:00:48] root episode 2880 Inserted
+[INFO 09:00:48] my_main ================ MetaEpoch: 2912 ================
+[INFO 09:00:48] my_main Time passed: 5 minutes, 43 seconds
+[INFO 09:00:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:48] my_main Chosen Teammate: 3  3
+[INFO 09:00:48] root Runing batch
+[INFO 09:00:51] root Get batch
+[INFO 09:00:51] root episode 2912 Inserted
+[INFO 09:00:51] my_main ================ MetaEpoch: 2944 ================
+[INFO 09:00:51] my_main Time passed: 5 minutes, 46 seconds
+[INFO 09:00:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:51] my_main Chosen Teammate: 0  2
+[INFO 09:00:51] root Runing batch
+[INFO 09:00:55] root Get batch
+[INFO 09:00:55] root episode 2944 Inserted
+[INFO 09:00:55] my_main ================ MetaEpoch: 2976 ================
+[INFO 09:00:55] my_main Time passed: 5 minutes, 50 seconds
+[INFO 09:00:55] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:55] my_main Chosen Teammate: 1  0
+[INFO 09:00:55] root Runing batch
+[INFO 09:00:58] root Get batch
+[INFO 09:00:58] root episode 2976 Inserted
+[INFO 09:00:58] my_main ================ MetaEpoch: 3008 ================
+[INFO 09:00:58] my_main Time passed: 5 minutes, 53 seconds
+[INFO 09:00:58] my_main Status: [0, 0, 0, 0]
+[INFO 09:00:58] my_main Chosen Teammate: 2  1
+[INFO 09:00:58] root Runing batch
+[INFO 09:01:02] root Get batch
+[INFO 09:01:02] root episode 3008 Inserted
+[INFO 09:01:02] my_main ================ MetaEpoch: 3040 ================
+[INFO 09:01:02] my_main Time passed: 5 minutes, 57 seconds
+[INFO 09:01:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:02] my_main Chosen Teammate: 3  3
+[INFO 09:01:02] root Runing batch
+[INFO 09:01:05] root Get batch
+[INFO 09:01:05] root episode 3040 Inserted
+[INFO 09:01:07] root Trajectories saved to saves/buffer_3072.pkl.
+[INFO 09:01:07] my_main ================ MetaEpoch: 3072 ================
+[INFO 09:01:07] my_main Time passed: 6 minutes, 2 seconds
+[INFO 09:01:07] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:07] my_main Chosen Teammate: 0  2
+[INFO 09:01:07] root Runing batch
+[INFO 09:01:10] root Get batch
+[INFO 09:01:10] root episode 3072 Inserted
+[INFO 09:01:10] my_main ================ MetaEpoch: 3104 ================
+[INFO 09:01:10] my_main Time passed: 6 minutes, 6 seconds
+[INFO 09:01:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:10] my_main Chosen Teammate: 1  0
+[INFO 09:01:10] root Runing batch
+[INFO 09:01:14] root Get batch
+[INFO 09:01:14] root episode 3104 Inserted
+[INFO 09:01:14] my_main ================ MetaEpoch: 3136 ================
+[INFO 09:01:14] my_main Time passed: 6 minutes, 9 seconds
+[INFO 09:01:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:14] my_main Chosen Teammate: 2  1
+[INFO 09:01:14] root Runing batch
+[INFO 09:01:18] root Get batch
+[INFO 09:01:18] root episode 3136 Inserted
+[INFO 09:01:18] my_main ================ MetaEpoch: 3168 ================
+[INFO 09:01:18] my_main Time passed: 6 minutes, 13 seconds
+[INFO 09:01:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:18] my_main Chosen Teammate: 3  3
+[INFO 09:01:18] root Runing batch
+[INFO 09:01:22] root Get batch
+[INFO 09:01:22] root episode 3168 Inserted
+[INFO 09:01:22] my_main ================ MetaEpoch: 3200 ================
+[INFO 09:01:22] my_main Time passed: 6 minutes, 17 seconds
+[INFO 09:01:22] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:22] my_main Chosen Teammate: 0  2
+[INFO 09:01:22] root Runing batch
+[INFO 09:01:26] root Get batch
+[INFO 09:01:26] root episode 3200 Inserted
+[INFO 09:01:26] my_main ================ MetaEpoch: 3232 ================
+[INFO 09:01:26] my_main Time passed: 6 minutes, 21 seconds
+[INFO 09:01:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:26] my_main Chosen Teammate: 1  0
+[INFO 09:01:26] root Runing batch
+[INFO 09:01:30] root Get batch
+[INFO 09:01:30] root episode 3232 Inserted
+[INFO 09:01:30] my_main ================ MetaEpoch: 3264 ================
+[INFO 09:01:30] my_main Time passed: 6 minutes, 25 seconds
+[INFO 09:01:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:30] my_main Chosen Teammate: 2  1
+[INFO 09:01:30] root Runing batch
+[INFO 09:01:34] root Get batch
+[INFO 09:01:34] root episode 3264 Inserted
+[INFO 09:01:34] my_main ================ MetaEpoch: 3296 ================
+[INFO 09:01:34] my_main Time passed: 6 minutes, 29 seconds
+[INFO 09:01:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:34] my_main Chosen Teammate: 3  3
+[INFO 09:01:34] root Runing batch
+[INFO 09:01:38] root Get batch
+[INFO 09:01:38] root episode 3296 Inserted
+[INFO 09:01:38] my_main ================ MetaEpoch: 3328 ================
+[INFO 09:01:38] my_main Time passed: 6 minutes, 33 seconds
+[INFO 09:01:38] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:38] my_main Chosen Teammate: 0  2
+[INFO 09:01:38] root Runing batch
+[INFO 09:01:43] root Get batch
+[INFO 09:01:43] root episode 3328 Inserted
+[INFO 09:01:43] my_main ================ MetaEpoch: 3360 ================
+[INFO 09:01:43] my_main Time passed: 6 minutes, 38 seconds
+[INFO 09:01:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:43] my_main Chosen Teammate: 1  0
+[INFO 09:01:43] root Runing batch
+[INFO 09:01:48] root Get batch
+[INFO 09:01:48] root episode 3360 Inserted
+[INFO 09:01:48] my_main ================ MetaEpoch: 3392 ================
+[INFO 09:01:48] my_main Time passed: 6 minutes, 43 seconds
+[INFO 09:01:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:48] my_main Chosen Teammate: 2  1
+[INFO 09:01:48] root Runing batch
+[INFO 09:01:52] root Get batch
+[INFO 09:01:52] root episode 3392 Inserted
+[INFO 09:01:52] my_main ================ MetaEpoch: 3424 ================
+[INFO 09:01:52] my_main Time passed: 6 minutes, 47 seconds
+[INFO 09:01:52] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:52] my_main Chosen Teammate: 3  3
+[INFO 09:01:52] root Runing batch
+[INFO 09:01:56] root Get batch
+[INFO 09:01:56] root episode 3424 Inserted
+[INFO 09:01:56] my_main ================ MetaEpoch: 3456 ================
+[INFO 09:01:56] my_main Time passed: 6 minutes, 51 seconds
+[INFO 09:01:56] my_main Status: [0, 0, 0, 0]
+[INFO 09:01:56] my_main Chosen Teammate: 0  2
+[INFO 09:01:56] root Runing batch
+[INFO 09:02:00] root Get batch
+[INFO 09:02:00] root episode 3456 Inserted
+[INFO 09:02:00] my_main ================ MetaEpoch: 3488 ================
+[INFO 09:02:00] my_main Time passed: 6 minutes, 55 seconds
+[INFO 09:02:00] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:00] my_main Chosen Teammate: 1  0
+[INFO 09:02:00] root Runing batch
+[INFO 09:02:03] root Get batch
+[INFO 09:02:03] root episode 3488 Inserted
+[INFO 09:02:03] my_main ================ MetaEpoch: 3520 ================
+[INFO 09:02:03] my_main Time passed: 6 minutes, 59 seconds
+[INFO 09:02:03] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:03] my_main Chosen Teammate: 2  1
+[INFO 09:02:03] root Runing batch
+[INFO 09:02:07] root Get batch
+[INFO 09:02:07] root episode 3520 Inserted
+[INFO 09:02:07] my_main ================ MetaEpoch: 3552 ================
+[INFO 09:02:07] my_main Time passed: 7 minutes, 2 seconds
+[INFO 09:02:07] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:07] my_main Chosen Teammate: 3  3
+[INFO 09:02:07] root Runing batch
+[INFO 09:02:10] root Get batch
+[INFO 09:02:10] root episode 3552 Inserted
+[INFO 09:02:10] my_main ================ MetaEpoch: 3584 ================
+[INFO 09:02:10] my_main Time passed: 7 minutes, 6 seconds
+[INFO 09:02:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:10] my_main Chosen Teammate: 0  2
+[INFO 09:02:10] root Runing batch
+[INFO 09:02:14] root Get batch
+[INFO 09:02:14] root episode 3584 Inserted
+[INFO 09:02:14] my_main ================ MetaEpoch: 3616 ================
+[INFO 09:02:14] my_main Time passed: 7 minutes, 9 seconds
+[INFO 09:02:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:14] my_main Chosen Teammate: 1  0
+[INFO 09:02:14] root Runing batch
+[INFO 09:02:18] root Get batch
+[INFO 09:02:18] root episode 3616 Inserted
+[INFO 09:02:18] my_main ================ MetaEpoch: 3648 ================
+[INFO 09:02:18] my_main Time passed: 7 minutes, 13 seconds
+[INFO 09:02:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:18] my_main Chosen Teammate: 2  1
+[INFO 09:02:18] root Runing batch
+[INFO 09:02:22] root Get batch
+[INFO 09:02:22] root episode 3648 Inserted
+[INFO 09:02:22] my_main ================ MetaEpoch: 3680 ================
+[INFO 09:02:22] my_main Time passed: 7 minutes, 17 seconds
+[INFO 09:02:22] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:22] my_main Chosen Teammate: 3  3
+[INFO 09:02:22] root Runing batch
+[INFO 09:02:25] root Get batch
+[INFO 09:02:25] root episode 3680 Inserted
+[INFO 09:02:25] my_main ================ MetaEpoch: 3712 ================
+[INFO 09:02:25] my_main Time passed: 7 minutes, 21 seconds
+[INFO 09:02:25] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:25] my_main Chosen Teammate: 0  2
+[INFO 09:02:25] root Runing batch
+[INFO 09:02:29] root Get batch
+[INFO 09:02:29] root episode 3712 Inserted
+[INFO 09:02:29] my_main ================ MetaEpoch: 3744 ================
+[INFO 09:02:29] my_main Time passed: 7 minutes, 24 seconds
+[INFO 09:02:29] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:29] my_main Chosen Teammate: 1  0
+[INFO 09:02:29] root Runing batch
+[INFO 09:02:33] root Get batch
+[INFO 09:02:33] root episode 3744 Inserted
+[INFO 09:02:33] my_main ================ MetaEpoch: 3776 ================
+[INFO 09:02:33] my_main Time passed: 7 minutes, 28 seconds
+[INFO 09:02:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:33] my_main Chosen Teammate: 2  1
+[INFO 09:02:33] root Runing batch
+[INFO 09:02:36] root Get batch
+[INFO 09:02:37] root episode 3776 Inserted
+[INFO 09:02:37] my_main ================ MetaEpoch: 3808 ================
+[INFO 09:02:37] my_main Time passed: 7 minutes, 32 seconds
+[INFO 09:02:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:37] my_main Chosen Teammate: 3  3
+[INFO 09:02:37] root Runing batch
+[INFO 09:02:40] root Get batch
+[INFO 09:02:40] root episode 3808 Inserted
+[INFO 09:02:40] my_main ================ MetaEpoch: 3840 ================
+[INFO 09:02:40] my_main Time passed: 7 minutes, 35 seconds
+[INFO 09:02:40] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:40] my_main Chosen Teammate: 0  2
+[INFO 09:02:40] root Runing batch
+[INFO 09:02:44] root Get batch
+[INFO 09:02:44] root episode 3840 Inserted
+[INFO 09:02:44] my_main ================ MetaEpoch: 3872 ================
+[INFO 09:02:44] my_main Time passed: 7 minutes, 39 seconds
+[INFO 09:02:44] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:44] my_main Chosen Teammate: 1  0
+[INFO 09:02:44] root Runing batch
+[INFO 09:02:47] root Get batch
+[INFO 09:02:47] root episode 3872 Inserted
+[INFO 09:02:47] my_main ================ MetaEpoch: 3904 ================
+[INFO 09:02:47] my_main Time passed: 7 minutes, 43 seconds
+[INFO 09:02:47] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:47] my_main Chosen Teammate: 2  1
+[INFO 09:02:47] root Runing batch
+[INFO 09:02:51] root Get batch
+[INFO 09:02:51] root episode 3904 Inserted
+[INFO 09:02:51] my_main ================ MetaEpoch: 3936 ================
+[INFO 09:02:51] my_main Time passed: 7 minutes, 46 seconds
+[INFO 09:02:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:51] my_main Chosen Teammate: 3  3
+[INFO 09:02:51] root Runing batch
+[INFO 09:02:54] root Get batch
+[INFO 09:02:54] root episode 3936 Inserted
+[INFO 09:02:54] my_main ================ MetaEpoch: 3968 ================
+[INFO 09:02:54] my_main Time passed: 7 minutes, 50 seconds
+[INFO 09:02:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:54] my_main Chosen Teammate: 0  2
+[INFO 09:02:54] root Runing batch
+[INFO 09:02:58] root Get batch
+[INFO 09:02:58] root episode 3968 Inserted
+[INFO 09:02:58] my_main ================ MetaEpoch: 4000 ================
+[INFO 09:02:58] my_main Time passed: 7 minutes, 53 seconds
+[INFO 09:02:58] my_main Status: [0, 0, 0, 0]
+[INFO 09:02:58] my_main Chosen Teammate: 1  0
+[INFO 09:02:58] root Runing batch
+[INFO 09:03:01] root Get batch
+[INFO 09:03:02] root episode 4000 Inserted
+[INFO 09:03:02] my_main ================ MetaEpoch: 4032 ================
+[INFO 09:03:02] my_main Time passed: 7 minutes, 57 seconds
+[INFO 09:03:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:02] my_main Chosen Teammate: 2  1
+[INFO 09:03:02] root Runing batch
+[INFO 09:03:05] root Get batch
+[INFO 09:03:05] root episode 4032 Inserted
+[INFO 09:03:05] my_main ================ MetaEpoch: 4064 ================
+[INFO 09:03:05] my_main Time passed: 8 minutes, 0 seconds
+[INFO 09:03:05] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:05] my_main Chosen Teammate: 3  3
+[INFO 09:03:05] root Runing batch
+[INFO 09:03:09] root Get batch
+[INFO 09:03:09] root episode 4064 Inserted
+[INFO 09:03:11] root Trajectories saved to saves/buffer_4096.pkl.
+[INFO 09:03:11] my_main ================ MetaEpoch: 4096 ================
+[INFO 09:03:11] my_main Time passed: 8 minutes, 6 seconds
+[INFO 09:03:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:11] my_main Chosen Teammate: 0  2
+[INFO 09:03:11] root Runing batch
+[INFO 09:03:14] root Get batch
+[INFO 09:03:14] root episode 4096 Inserted
+[INFO 09:03:14] my_main ================ MetaEpoch: 4128 ================
+[INFO 09:03:14] my_main Time passed: 8 minutes, 10 seconds
+[INFO 09:03:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:14] my_main Chosen Teammate: 1  0
+[INFO 09:03:14] root Runing batch
+[INFO 09:03:18] root Get batch
+[INFO 09:03:18] root episode 4128 Inserted
+[INFO 09:03:18] my_main ================ MetaEpoch: 4160 ================
+[INFO 09:03:18] my_main Time passed: 8 minutes, 13 seconds
+[INFO 09:03:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:18] my_main Chosen Teammate: 2  1
+[INFO 09:03:18] root Runing batch
+[INFO 09:03:22] root Get batch
+[INFO 09:03:22] root episode 4160 Inserted
+[INFO 09:03:22] my_main ================ MetaEpoch: 4192 ================
+[INFO 09:03:22] my_main Time passed: 8 minutes, 17 seconds
+[INFO 09:03:22] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:22] my_main Chosen Teammate: 3  3
+[INFO 09:03:22] root Runing batch
+[INFO 09:03:26] root Get batch
+[INFO 09:03:26] root episode 4192 Inserted
+[INFO 09:03:26] my_main ================ MetaEpoch: 4224 ================
+[INFO 09:03:26] my_main Time passed: 8 minutes, 21 seconds
+[INFO 09:03:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:26] my_main Chosen Teammate: 0  2
+[INFO 09:03:26] root Runing batch
+[INFO 09:03:30] root Get batch
+[INFO 09:03:30] root episode 4224 Inserted
+[INFO 09:03:30] my_main ================ MetaEpoch: 4256 ================
+[INFO 09:03:30] my_main Time passed: 8 minutes, 25 seconds
+[INFO 09:03:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:30] my_main Chosen Teammate: 1  0
+[INFO 09:03:30] root Runing batch
+[INFO 09:03:33] root Get batch
+[INFO 09:03:33] root episode 4256 Inserted
+[INFO 09:03:33] my_main ================ MetaEpoch: 4288 ================
+[INFO 09:03:33] my_main Time passed: 8 minutes, 29 seconds
+[INFO 09:03:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:33] my_main Chosen Teammate: 2  1
+[INFO 09:03:33] root Runing batch
+[INFO 09:03:37] root Get batch
+[INFO 09:03:38] root episode 4288 Inserted
+[INFO 09:03:38] my_main ================ MetaEpoch: 4320 ================
+[INFO 09:03:38] my_main Time passed: 8 minutes, 33 seconds
+[INFO 09:03:38] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:38] my_main Chosen Teammate: 3  3
+[INFO 09:03:38] root Runing batch
+[INFO 09:03:41] root Get batch
+[INFO 09:03:41] root episode 4320 Inserted
+[INFO 09:03:41] my_main ================ MetaEpoch: 4352 ================
+[INFO 09:03:41] my_main Time passed: 8 minutes, 37 seconds
+[INFO 09:03:41] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:41] my_main Chosen Teammate: 0  2
+[INFO 09:03:41] root Runing batch
+[INFO 09:03:45] root Get batch
+[INFO 09:03:45] root episode 4352 Inserted
+[INFO 09:03:45] my_main ================ MetaEpoch: 4384 ================
+[INFO 09:03:45] my_main Time passed: 8 minutes, 40 seconds
+[INFO 09:03:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:45] my_main Chosen Teammate: 1  0
+[INFO 09:03:45] root Runing batch
+[INFO 09:03:49] root Get batch
+[INFO 09:03:49] root episode 4384 Inserted
+[INFO 09:03:49] my_main ================ MetaEpoch: 4416 ================
+[INFO 09:03:49] my_main Time passed: 8 minutes, 44 seconds
+[INFO 09:03:49] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:49] my_main Chosen Teammate: 2  1
+[INFO 09:03:49] root Runing batch
+[INFO 09:03:53] root Get batch
+[INFO 09:03:53] root episode 4416 Inserted
+[INFO 09:03:53] my_main ================ MetaEpoch: 4448 ================
+[INFO 09:03:53] my_main Time passed: 8 minutes, 48 seconds
+[INFO 09:03:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:53] my_main Chosen Teammate: 3  3
+[INFO 09:03:53] root Runing batch
+[INFO 09:03:57] root Get batch
+[INFO 09:03:57] root episode 4448 Inserted
+[INFO 09:03:57] my_main ================ MetaEpoch: 4480 ================
+[INFO 09:03:57] my_main Time passed: 8 minutes, 52 seconds
+[INFO 09:03:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:03:57] my_main Chosen Teammate: 0  2
+[INFO 09:03:57] root Runing batch
+[INFO 09:04:00] root Get batch
+[INFO 09:04:00] root episode 4480 Inserted
+[INFO 09:04:00] my_main ================ MetaEpoch: 4512 ================
+[INFO 09:04:00] my_main Time passed: 8 minutes, 55 seconds
+[INFO 09:04:00] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:00] my_main Chosen Teammate: 1  0
+[INFO 09:04:00] root Runing batch
+[INFO 09:04:04] root Get batch
+[INFO 09:04:04] root episode 4512 Inserted
+[INFO 09:04:04] my_main ================ MetaEpoch: 4544 ================
+[INFO 09:04:04] my_main Time passed: 8 minutes, 59 seconds
+[INFO 09:04:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:04] my_main Chosen Teammate: 2  1
+[INFO 09:04:04] root Runing batch
+[INFO 09:04:08] root Get batch
+[INFO 09:04:08] root episode 4544 Inserted
+[INFO 09:04:08] my_main ================ MetaEpoch: 4576 ================
+[INFO 09:04:08] my_main Time passed: 9 minutes, 4 seconds
+[INFO 09:04:08] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:08] my_main Chosen Teammate: 3  3
+[INFO 09:04:08] root Runing batch
+[INFO 09:04:13] root Get batch
+[INFO 09:04:13] root episode 4576 Inserted
+[INFO 09:04:13] my_main ================ MetaEpoch: 4608 ================
+[INFO 09:04:13] my_main Time passed: 9 minutes, 8 seconds
+[INFO 09:04:13] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:13] my_main Chosen Teammate: 0  2
+[INFO 09:04:13] root Runing batch
+[INFO 09:04:16] root Get batch
+[INFO 09:04:16] root episode 4608 Inserted
+[INFO 09:04:16] my_main ================ MetaEpoch: 4640 ================
+[INFO 09:04:16] my_main Time passed: 9 minutes, 12 seconds
+[INFO 09:04:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:16] my_main Chosen Teammate: 1  0
+[INFO 09:04:16] root Runing batch
+[INFO 09:04:20] root Get batch
+[INFO 09:04:20] root episode 4640 Inserted
+[INFO 09:04:20] my_main ================ MetaEpoch: 4672 ================
+[INFO 09:04:20] my_main Time passed: 9 minutes, 15 seconds
+[INFO 09:04:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:20] my_main Chosen Teammate: 2  1
+[INFO 09:04:20] root Runing batch
+[INFO 09:04:24] root Get batch
+[INFO 09:04:24] root episode 4672 Inserted
+[INFO 09:04:24] my_main ================ MetaEpoch: 4704 ================
+[INFO 09:04:24] my_main Time passed: 9 minutes, 19 seconds
+[INFO 09:04:24] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:24] my_main Chosen Teammate: 3  3
+[INFO 09:04:24] root Runing batch
+[INFO 09:04:28] root Get batch
+[INFO 09:04:28] root episode 4704 Inserted
+[INFO 09:04:28] my_main ================ MetaEpoch: 4736 ================
+[INFO 09:04:28] my_main Time passed: 9 minutes, 23 seconds
+[INFO 09:04:28] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:28] my_main Chosen Teammate: 0  2
+[INFO 09:04:28] root Runing batch
+[INFO 09:04:31] root Get batch
+[INFO 09:04:31] root episode 4736 Inserted
+[INFO 09:04:31] my_main ================ MetaEpoch: 4768 ================
+[INFO 09:04:31] my_main Time passed: 9 minutes, 26 seconds
+[INFO 09:04:31] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:31] my_main Chosen Teammate: 1  0
+[INFO 09:04:31] root Runing batch
+[INFO 09:04:35] root Get batch
+[INFO 09:04:35] root episode 4768 Inserted
+[INFO 09:04:35] my_main ================ MetaEpoch: 4800 ================
+[INFO 09:04:35] my_main Time passed: 9 minutes, 30 seconds
+[INFO 09:04:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:35] my_main Chosen Teammate: 2  1
+[INFO 09:04:35] root Runing batch
+[INFO 09:04:38] root Get batch
+[INFO 09:04:38] root episode 4800 Inserted
+[INFO 09:04:38] my_main ================ MetaEpoch: 4832 ================
+[INFO 09:04:38] my_main Time passed: 9 minutes, 34 seconds
+[INFO 09:04:38] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:38] my_main Chosen Teammate: 3  3
+[INFO 09:04:38] root Runing batch
+[INFO 09:04:42] root Get batch
+[INFO 09:04:42] root episode 4832 Inserted
+[INFO 09:04:42] my_main ================ MetaEpoch: 4864 ================
+[INFO 09:04:42] my_main Time passed: 9 minutes, 37 seconds
+[INFO 09:04:42] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:42] my_main Chosen Teammate: 0  2
+[INFO 09:04:42] root Runing batch
+[INFO 09:04:46] root Get batch
+[INFO 09:04:46] root episode 4864 Inserted
+[INFO 09:04:46] my_main ================ MetaEpoch: 4896 ================
+[INFO 09:04:46] my_main Time passed: 9 minutes, 41 seconds
+[INFO 09:04:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:46] my_main Chosen Teammate: 1  0
+[INFO 09:04:46] root Runing batch
+[INFO 09:04:50] root Get batch
+[INFO 09:04:50] root episode 4896 Inserted
+[INFO 09:04:50] my_main ================ MetaEpoch: 4928 ================
+[INFO 09:04:50] my_main Time passed: 9 minutes, 45 seconds
+[INFO 09:04:50] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:50] my_main Chosen Teammate: 2  1
+[INFO 09:04:50] root Runing batch
+[INFO 09:04:53] root Get batch
+[INFO 09:04:53] root episode 4928 Inserted
+[INFO 09:04:53] my_main ================ MetaEpoch: 4960 ================
+[INFO 09:04:53] my_main Time passed: 9 minutes, 49 seconds
+[INFO 09:04:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:53] my_main Chosen Teammate: 3  3
+[INFO 09:04:53] root Runing batch
+[INFO 09:04:57] root Get batch
+[INFO 09:04:57] root episode 4960 Inserted
+[INFO 09:04:57] my_main ================ MetaEpoch: 4992 ================
+[INFO 09:04:57] my_main Time passed: 9 minutes, 52 seconds
+[INFO 09:04:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:04:57] my_main Chosen Teammate: 0  2
+[INFO 09:04:57] root Runing batch
+[INFO 09:05:01] root Get batch
+[INFO 09:05:01] root episode 4992 Inserted
+[INFO 09:05:01] my_main ================ MetaEpoch: 5024 ================
+[INFO 09:05:01] my_main Time passed: 9 minutes, 56 seconds
+[INFO 09:05:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:01] my_main Chosen Teammate: 1  0
+[INFO 09:05:01] root Runing batch
+[INFO 09:05:04] root Get batch
+[INFO 09:05:04] root episode 5024 Inserted
+[INFO 09:05:04] my_main ================ MetaEpoch: 5056 ================
+[INFO 09:05:04] my_main Time passed: 10 minutes, 0 seconds
+[INFO 09:05:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:04] my_main Chosen Teammate: 2  1
+[INFO 09:05:04] root Runing batch
+[INFO 09:05:08] root Get batch
+[INFO 09:05:08] root episode 5056 Inserted
+[INFO 09:05:08] my_main ================ MetaEpoch: 5088 ================
+[INFO 09:05:08] my_main Time passed: 10 minutes, 3 seconds
+[INFO 09:05:08] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:08] my_main Chosen Teammate: 3  3
+[INFO 09:05:08] root Runing batch
+[INFO 09:05:11] root Get batch
+[INFO 09:05:11] root episode 5088 Inserted
+[INFO 09:05:12] root Trajectories saved to saves/buffer_5120.pkl.
+[INFO 09:05:12] my_main ================ MetaEpoch: 5120 ================
+[INFO 09:05:12] my_main Time passed: 10 minutes, 7 seconds
+[INFO 09:05:12] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:12] my_main Chosen Teammate: 0  2
+[INFO 09:05:12] root Runing batch
+[INFO 09:05:15] root Get batch
+[INFO 09:05:15] root episode 5120 Inserted
+[INFO 09:05:15] my_main ================ MetaEpoch: 5152 ================
+[INFO 09:05:15] my_main Time passed: 10 minutes, 10 seconds
+[INFO 09:05:15] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:15] my_main Chosen Teammate: 1  0
+[INFO 09:05:15] root Runing batch
+[INFO 09:05:19] root Get batch
+[INFO 09:05:19] root episode 5152 Inserted
+[INFO 09:05:19] my_main ================ MetaEpoch: 5184 ================
+[INFO 09:05:19] my_main Time passed: 10 minutes, 14 seconds
+[INFO 09:05:19] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:19] my_main Chosen Teammate: 2  1
+[INFO 09:05:19] root Runing batch
+[INFO 09:05:23] root Get batch
+[INFO 09:05:23] root episode 5184 Inserted
+[INFO 09:05:23] my_main ================ MetaEpoch: 5216 ================
+[INFO 09:05:23] my_main Time passed: 10 minutes, 18 seconds
+[INFO 09:05:23] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:23] my_main Chosen Teammate: 3  3
+[INFO 09:05:23] root Runing batch
+[INFO 09:05:26] root Get batch
+[INFO 09:05:26] root episode 5216 Inserted
+[INFO 09:05:26] my_main ================ MetaEpoch: 5248 ================
+[INFO 09:05:26] my_main Time passed: 10 minutes, 22 seconds
+[INFO 09:05:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:26] my_main Chosen Teammate: 0  2
+[INFO 09:05:26] root Runing batch
+[INFO 09:05:30] root Get batch
+[INFO 09:05:30] root episode 5248 Inserted
+[INFO 09:05:30] my_main ================ MetaEpoch: 5280 ================
+[INFO 09:05:30] my_main Time passed: 10 minutes, 25 seconds
+[INFO 09:05:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:30] my_main Chosen Teammate: 1  0
+[INFO 09:05:30] root Runing batch
+[INFO 09:05:34] root Get batch
+[INFO 09:05:34] root episode 5280 Inserted
+[INFO 09:05:34] my_main ================ MetaEpoch: 5312 ================
+[INFO 09:05:34] my_main Time passed: 10 minutes, 29 seconds
+[INFO 09:05:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:34] my_main Chosen Teammate: 2  1
+[INFO 09:05:34] root Runing batch
+[INFO 09:05:39] root Get batch
+[INFO 09:05:39] root episode 5312 Inserted
+[INFO 09:05:39] my_main ================ MetaEpoch: 5344 ================
+[INFO 09:05:39] my_main Time passed: 10 minutes, 34 seconds
+[INFO 09:05:39] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:39] my_main Chosen Teammate: 3  3
+[INFO 09:05:39] root Runing batch
+[INFO 09:05:43] root Get batch
+[INFO 09:05:43] root episode 5344 Inserted
+[INFO 09:05:43] my_main ================ MetaEpoch: 5376 ================
+[INFO 09:05:43] my_main Time passed: 10 minutes, 38 seconds
+[INFO 09:05:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:43] my_main Chosen Teammate: 0  2
+[INFO 09:05:43] root Runing batch
+[INFO 09:05:46] root Get batch
+[INFO 09:05:46] root episode 5376 Inserted
+[INFO 09:05:46] my_main ================ MetaEpoch: 5408 ================
+[INFO 09:05:46] my_main Time passed: 10 minutes, 41 seconds
+[INFO 09:05:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:46] my_main Chosen Teammate: 1  0
+[INFO 09:05:46] root Runing batch
+[INFO 09:05:50] root Get batch
+[INFO 09:05:50] root episode 5408 Inserted
+[INFO 09:05:50] my_main ================ MetaEpoch: 5440 ================
+[INFO 09:05:50] my_main Time passed: 10 minutes, 45 seconds
+[INFO 09:05:50] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:50] my_main Chosen Teammate: 2  1
+[INFO 09:05:50] root Runing batch
+[INFO 09:05:54] root Get batch
+[INFO 09:05:54] root episode 5440 Inserted
+[INFO 09:05:54] my_main ================ MetaEpoch: 5472 ================
+[INFO 09:05:54] my_main Time passed: 10 minutes, 49 seconds
+[INFO 09:05:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:54] my_main Chosen Teammate: 3  3
+[INFO 09:05:54] root Runing batch
+[INFO 09:05:58] root Get batch
+[INFO 09:05:58] root episode 5472 Inserted
+[INFO 09:05:58] my_main ================ MetaEpoch: 5504 ================
+[INFO 09:05:58] my_main Time passed: 10 minutes, 53 seconds
+[INFO 09:05:58] my_main Status: [0, 0, 0, 0]
+[INFO 09:05:58] my_main Chosen Teammate: 0  2
+[INFO 09:05:58] root Runing batch
+[INFO 09:06:02] root Get batch
+[INFO 09:06:02] root episode 5504 Inserted
+[INFO 09:06:02] my_main ================ MetaEpoch: 5536 ================
+[INFO 09:06:02] my_main Time passed: 10 minutes, 57 seconds
+[INFO 09:06:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:02] my_main Chosen Teammate: 1  0
+[INFO 09:06:02] root Runing batch
+[INFO 09:06:06] root Get batch
+[INFO 09:06:06] root episode 5536 Inserted
+[INFO 09:06:06] my_main ================ MetaEpoch: 5568 ================
+[INFO 09:06:06] my_main Time passed: 11 minutes, 1 seconds
+[INFO 09:06:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:06] my_main Chosen Teammate: 2  1
+[INFO 09:06:06] root Runing batch
+[INFO 09:06:10] root Get batch
+[INFO 09:06:10] root episode 5568 Inserted
+[INFO 09:06:10] my_main ================ MetaEpoch: 5600 ================
+[INFO 09:06:10] my_main Time passed: 11 minutes, 5 seconds
+[INFO 09:06:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:10] my_main Chosen Teammate: 3  3
+[INFO 09:06:10] root Runing batch
+[INFO 09:06:15] root Get batch
+[INFO 09:06:15] root episode 5600 Inserted
+[INFO 09:06:15] my_main ================ MetaEpoch: 5632 ================
+[INFO 09:06:15] my_main Time passed: 11 minutes, 10 seconds
+[INFO 09:06:15] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:15] my_main Chosen Teammate: 0  2
+[INFO 09:06:15] root Runing batch
+[INFO 09:06:20] root Get batch
+[INFO 09:06:20] root episode 5632 Inserted
+[INFO 09:06:20] my_main ================ MetaEpoch: 5664 ================
+[INFO 09:06:20] my_main Time passed: 11 minutes, 15 seconds
+[INFO 09:06:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:20] my_main Chosen Teammate: 1  0
+[INFO 09:06:20] root Runing batch
+[INFO 09:06:25] root Get batch
+[INFO 09:06:25] root episode 5664 Inserted
+[INFO 09:06:25] my_main ================ MetaEpoch: 5696 ================
+[INFO 09:06:25] my_main Time passed: 11 minutes, 20 seconds
+[INFO 09:06:25] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:25] my_main Chosen Teammate: 2  1
+[INFO 09:06:25] root Runing batch
+[INFO 09:06:30] root Get batch
+[INFO 09:06:30] root episode 5696 Inserted
+[INFO 09:06:30] my_main ================ MetaEpoch: 5728 ================
+[INFO 09:06:30] my_main Time passed: 11 minutes, 25 seconds
+[INFO 09:06:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:30] my_main Chosen Teammate: 3  3
+[INFO 09:06:30] root Runing batch
+[INFO 09:06:37] root Get batch
+[INFO 09:06:37] root episode 5728 Inserted
+[INFO 09:06:37] my_main ================ MetaEpoch: 5760 ================
+[INFO 09:06:37] my_main Time passed: 11 minutes, 32 seconds
+[INFO 09:06:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:37] my_main Chosen Teammate: 0  2
+[INFO 09:06:37] root Runing batch
+[INFO 09:06:43] root Get batch
+[INFO 09:06:43] root episode 5760 Inserted
+[INFO 09:06:43] my_main ================ MetaEpoch: 5792 ================
+[INFO 09:06:43] my_main Time passed: 11 minutes, 38 seconds
+[INFO 09:06:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:43] my_main Chosen Teammate: 1  0
+[INFO 09:06:43] root Runing batch
+[INFO 09:06:48] root Get batch
+[INFO 09:06:48] root episode 5792 Inserted
+[INFO 09:06:48] my_main ================ MetaEpoch: 5824 ================
+[INFO 09:06:48] my_main Time passed: 11 minutes, 43 seconds
+[INFO 09:06:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:48] my_main Chosen Teammate: 2  1
+[INFO 09:06:48] root Runing batch
+[INFO 09:06:53] root Get batch
+[INFO 09:06:53] root episode 5824 Inserted
+[INFO 09:06:53] my_main ================ MetaEpoch: 5856 ================
+[INFO 09:06:53] my_main Time passed: 11 minutes, 49 seconds
+[INFO 09:06:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:06:53] my_main Chosen Teammate: 3  3
+[INFO 09:06:53] root Runing batch
+[INFO 09:07:01] root Get batch
+[INFO 09:07:01] root episode 5856 Inserted
+[INFO 09:07:01] my_main ================ MetaEpoch: 5888 ================
+[INFO 09:07:01] my_main Time passed: 11 minutes, 56 seconds
+[INFO 09:07:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:01] my_main Chosen Teammate: 0  2
+[INFO 09:07:01] root Runing batch
+[INFO 09:07:06] root Get batch
+[INFO 09:07:06] root episode 5888 Inserted
+[INFO 09:07:06] my_main ================ MetaEpoch: 5920 ================
+[INFO 09:07:06] my_main Time passed: 12 minutes, 1 seconds
+[INFO 09:07:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:06] my_main Chosen Teammate: 1  0
+[INFO 09:07:06] root Runing batch
+[INFO 09:07:14] root Get batch
+[INFO 09:07:14] root episode 5920 Inserted
+[INFO 09:07:14] my_main ================ MetaEpoch: 5952 ================
+[INFO 09:07:14] my_main Time passed: 12 minutes, 9 seconds
+[INFO 09:07:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:14] my_main Chosen Teammate: 2  1
+[INFO 09:07:14] root Runing batch
+[INFO 09:07:21] root Get batch
+[INFO 09:07:21] root episode 5952 Inserted
+[INFO 09:07:21] my_main ================ MetaEpoch: 5984 ================
+[INFO 09:07:21] my_main Time passed: 12 minutes, 16 seconds
+[INFO 09:07:21] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:21] my_main Chosen Teammate: 3  3
+[INFO 09:07:21] root Runing batch
+[INFO 09:07:29] root Get batch
+[INFO 09:07:29] root episode 5984 Inserted
+[INFO 09:07:29] my_main ================ MetaEpoch: 6016 ================
+[INFO 09:07:29] my_main Time passed: 12 minutes, 24 seconds
+[INFO 09:07:29] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:29] my_main Chosen Teammate: 0  2
+[INFO 09:07:29] root Runing batch
+[INFO 09:07:37] root Get batch
+[INFO 09:07:37] root episode 6016 Inserted
+[INFO 09:07:37] my_main ================ MetaEpoch: 6048 ================
+[INFO 09:07:37] my_main Time passed: 12 minutes, 32 seconds
+[INFO 09:07:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:37] my_main Chosen Teammate: 1  0
+[INFO 09:07:37] root Runing batch
+[INFO 09:07:42] root Get batch
+[INFO 09:07:42] root episode 6048 Inserted
+[INFO 09:07:42] my_main ================ MetaEpoch: 6080 ================
+[INFO 09:07:42] my_main Time passed: 12 minutes, 37 seconds
+[INFO 09:07:42] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:42] my_main Chosen Teammate: 2  1
+[INFO 09:07:42] root Runing batch
+[INFO 09:07:47] root Get batch
+[INFO 09:07:47] root episode 6080 Inserted
+[INFO 09:07:47] my_main ================ MetaEpoch: 6112 ================
+[INFO 09:07:47] my_main Time passed: 12 minutes, 43 seconds
+[INFO 09:07:47] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:47] my_main Chosen Teammate: 3  3
+[INFO 09:07:47] root Runing batch
+[INFO 09:07:52] root Get batch
+[INFO 09:07:52] root episode 6112 Inserted
+[INFO 09:07:53] root Trajectories saved to saves/buffer_6144.pkl.
+[INFO 09:07:53] my_main ================ MetaEpoch: 6144 ================
+[INFO 09:07:53] my_main Time passed: 12 minutes, 49 seconds
+[INFO 09:07:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:53] my_main Chosen Teammate: 0  2
+[INFO 09:07:53] root Runing batch
+[INFO 09:07:58] root Get batch
+[INFO 09:07:58] root episode 6144 Inserted
+[INFO 09:07:58] my_main ================ MetaEpoch: 6176 ================
+[INFO 09:07:58] my_main Time passed: 12 minutes, 53 seconds
+[INFO 09:07:58] my_main Status: [0, 0, 0, 0]
+[INFO 09:07:58] my_main Chosen Teammate: 1  0
+[INFO 09:07:58] root Runing batch
+[INFO 09:08:02] root Get batch
+[INFO 09:08:02] root episode 6176 Inserted
+[INFO 09:08:02] my_main ================ MetaEpoch: 6208 ================
+[INFO 09:08:02] my_main Time passed: 12 minutes, 58 seconds
+[INFO 09:08:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:02] my_main Chosen Teammate: 2  1
+[INFO 09:08:02] root Runing batch
+[INFO 09:08:07] root Get batch
+[INFO 09:08:07] root episode 6208 Inserted
+[INFO 09:08:07] my_main ================ MetaEpoch: 6240 ================
+[INFO 09:08:07] my_main Time passed: 13 minutes, 2 seconds
+[INFO 09:08:07] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:07] my_main Chosen Teammate: 3  3
+[INFO 09:08:07] root Runing batch
+[INFO 09:08:11] root Get batch
+[INFO 09:08:11] root episode 6240 Inserted
+[INFO 09:08:11] my_main ================ MetaEpoch: 6272 ================
+[INFO 09:08:11] my_main Time passed: 13 minutes, 7 seconds
+[INFO 09:08:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:11] my_main Chosen Teammate: 0  2
+[INFO 09:08:11] root Runing batch
+[INFO 09:08:16] root Get batch
+[INFO 09:08:16] root episode 6272 Inserted
+[INFO 09:08:16] my_main ================ MetaEpoch: 6304 ================
+[INFO 09:08:16] my_main Time passed: 13 minutes, 11 seconds
+[INFO 09:08:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:16] my_main Chosen Teammate: 1  0
+[INFO 09:08:16] root Runing batch
+[INFO 09:08:23] root Get batch
+[INFO 09:08:23] root episode 6304 Inserted
+[INFO 09:08:23] my_main ================ MetaEpoch: 6336 ================
+[INFO 09:08:23] my_main Time passed: 13 minutes, 18 seconds
+[INFO 09:08:23] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:23] my_main Chosen Teammate: 2  1
+[INFO 09:08:23] root Runing batch
+[INFO 09:08:33] root Get batch
+[INFO 09:08:33] root episode 6336 Inserted
+[INFO 09:08:33] my_main ================ MetaEpoch: 6368 ================
+[INFO 09:08:33] my_main Time passed: 13 minutes, 28 seconds
+[INFO 09:08:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:33] my_main Chosen Teammate: 3  3
+[INFO 09:08:33] root Runing batch
+[INFO 09:08:43] root Get batch
+[INFO 09:08:43] root episode 6368 Inserted
+[INFO 09:08:43] my_main ================ MetaEpoch: 6400 ================
+[INFO 09:08:43] my_main Time passed: 13 minutes, 38 seconds
+[INFO 09:08:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:43] my_main Chosen Teammate: 0  2
+[INFO 09:08:43] root Runing batch
+[INFO 09:08:51] root Get batch
+[INFO 09:08:51] root episode 6400 Inserted
+[INFO 09:08:51] my_main ================ MetaEpoch: 6432 ================
+[INFO 09:08:51] my_main Time passed: 13 minutes, 47 seconds
+[INFO 09:08:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:08:51] my_main Chosen Teammate: 1  0
+[INFO 09:08:51] root Runing batch
+[INFO 09:09:02] root Get batch
+[INFO 09:09:02] root episode 6432 Inserted
+[INFO 09:09:02] my_main ================ MetaEpoch: 6464 ================
+[INFO 09:09:02] my_main Time passed: 13 minutes, 57 seconds
+[INFO 09:09:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:02] my_main Chosen Teammate: 2  1
+[INFO 09:09:02] root Runing batch
+[INFO 09:09:11] root Get batch
+[INFO 09:09:11] root episode 6464 Inserted
+[INFO 09:09:11] my_main ================ MetaEpoch: 6496 ================
+[INFO 09:09:11] my_main Time passed: 14 minutes, 6 seconds
+[INFO 09:09:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:11] my_main Chosen Teammate: 3  3
+[INFO 09:09:11] root Runing batch
+[INFO 09:09:22] root Get batch
+[INFO 09:09:22] root episode 6496 Inserted
+[INFO 09:09:22] my_main ================ MetaEpoch: 6528 ================
+[INFO 09:09:22] my_main Time passed: 14 minutes, 17 seconds
+[INFO 09:09:22] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:22] my_main Chosen Teammate: 0  2
+[INFO 09:09:22] root Runing batch
+[INFO 09:09:33] root Get batch
+[INFO 09:09:33] root episode 6528 Inserted
+[INFO 09:09:33] my_main ================ MetaEpoch: 6560 ================
+[INFO 09:09:33] my_main Time passed: 14 minutes, 28 seconds
+[INFO 09:09:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:33] my_main Chosen Teammate: 1  0
+[INFO 09:09:33] root Runing batch
+[INFO 09:09:37] root Get batch
+[INFO 09:09:37] root episode 6560 Inserted
+[INFO 09:09:37] my_main ================ MetaEpoch: 6592 ================
+[INFO 09:09:37] my_main Time passed: 14 minutes, 32 seconds
+[INFO 09:09:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:37] my_main Chosen Teammate: 2  1
+[INFO 09:09:37] root Runing batch
+[INFO 09:09:42] root Get batch
+[INFO 09:09:42] root episode 6592 Inserted
+[INFO 09:09:42] my_main ================ MetaEpoch: 6624 ================
+[INFO 09:09:42] my_main Time passed: 14 minutes, 37 seconds
+[INFO 09:09:42] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:42] my_main Chosen Teammate: 3  3
+[INFO 09:09:42] root Runing batch
+[INFO 09:09:46] root Get batch
+[INFO 09:09:46] root episode 6624 Inserted
+[INFO 09:09:46] my_main ================ MetaEpoch: 6656 ================
+[INFO 09:09:46] my_main Time passed: 14 minutes, 41 seconds
+[INFO 09:09:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:46] my_main Chosen Teammate: 0  2
+[INFO 09:09:46] root Runing batch
+[INFO 09:09:51] root Get batch
+[INFO 09:09:51] root episode 6656 Inserted
+[INFO 09:09:51] my_main ================ MetaEpoch: 6688 ================
+[INFO 09:09:51] my_main Time passed: 14 minutes, 46 seconds
+[INFO 09:09:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:51] my_main Chosen Teammate: 1  0
+[INFO 09:09:51] root Runing batch
+[INFO 09:09:55] root Get batch
+[INFO 09:09:55] root episode 6688 Inserted
+[INFO 09:09:55] my_main ================ MetaEpoch: 6720 ================
+[INFO 09:09:55] my_main Time passed: 14 minutes, 51 seconds
+[INFO 09:09:55] my_main Status: [0, 0, 0, 0]
+[INFO 09:09:55] my_main Chosen Teammate: 2  1
+[INFO 09:09:55] root Runing batch
+[INFO 09:10:00] root Get batch
+[INFO 09:10:00] root episode 6720 Inserted
+[INFO 09:10:00] my_main ================ MetaEpoch: 6752 ================
+[INFO 09:10:00] my_main Time passed: 14 minutes, 55 seconds
+[INFO 09:10:00] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:00] my_main Chosen Teammate: 3  3
+[INFO 09:10:00] root Runing batch
+[INFO 09:10:05] root Get batch
+[INFO 09:10:05] root episode 6752 Inserted
+[INFO 09:10:05] my_main ================ MetaEpoch: 6784 ================
+[INFO 09:10:05] my_main Time passed: 15 minutes, 1 seconds
+[INFO 09:10:05] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:05] my_main Chosen Teammate: 0  2
+[INFO 09:10:05] root Runing batch
+[INFO 09:10:14] root Get batch
+[INFO 09:10:14] root episode 6784 Inserted
+[INFO 09:10:14] my_main ================ MetaEpoch: 6816 ================
+[INFO 09:10:14] my_main Time passed: 15 minutes, 9 seconds
+[INFO 09:10:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:14] my_main Chosen Teammate: 1  0
+[INFO 09:10:14] root Runing batch
+[INFO 09:10:22] root Get batch
+[INFO 09:10:22] root episode 6816 Inserted
+[INFO 09:10:22] my_main ================ MetaEpoch: 6848 ================
+[INFO 09:10:22] my_main Time passed: 15 minutes, 18 seconds
+[INFO 09:10:22] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:22] my_main Chosen Teammate: 2  1
+[INFO 09:10:22] root Runing batch
+[INFO 09:10:31] root Get batch
+[INFO 09:10:31] root episode 6848 Inserted
+[INFO 09:10:31] my_main ================ MetaEpoch: 6880 ================
+[INFO 09:10:31] my_main Time passed: 15 minutes, 26 seconds
+[INFO 09:10:31] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:31] my_main Chosen Teammate: 3  3
+[INFO 09:10:31] root Runing batch
+[INFO 09:10:39] root Get batch
+[INFO 09:10:39] root episode 6880 Inserted
+[INFO 09:10:39] my_main ================ MetaEpoch: 6912 ================
+[INFO 09:10:39] my_main Time passed: 15 minutes, 34 seconds
+[INFO 09:10:39] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:39] my_main Chosen Teammate: 0  2
+[INFO 09:10:39] root Runing batch
+[INFO 09:10:48] root Get batch
+[INFO 09:10:48] root episode 6912 Inserted
+[INFO 09:10:48] my_main ================ MetaEpoch: 6944 ================
+[INFO 09:10:48] my_main Time passed: 15 minutes, 43 seconds
+[INFO 09:10:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:48] my_main Chosen Teammate: 1  0
+[INFO 09:10:48] root Runing batch
+[INFO 09:10:56] root Get batch
+[INFO 09:10:56] root episode 6944 Inserted
+[INFO 09:10:56] my_main ================ MetaEpoch: 6976 ================
+[INFO 09:10:56] my_main Time passed: 15 minutes, 51 seconds
+[INFO 09:10:56] my_main Status: [0, 0, 0, 0]
+[INFO 09:10:56] my_main Chosen Teammate: 2  1
+[INFO 09:10:56] root Runing batch
+[INFO 09:11:04] root Get batch
+[INFO 09:11:04] root episode 6976 Inserted
+[INFO 09:11:04] my_main ================ MetaEpoch: 7008 ================
+[INFO 09:11:04] my_main Time passed: 16 minutes, 0 seconds
+[INFO 09:11:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:04] my_main Chosen Teammate: 3  3
+[INFO 09:11:04] root Runing batch
+[INFO 09:11:14] root Get batch
+[INFO 09:11:14] root episode 7008 Inserted
+[INFO 09:11:14] my_main ================ MetaEpoch: 7040 ================
+[INFO 09:11:14] my_main Time passed: 16 minutes, 9 seconds
+[INFO 09:11:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:14] my_main Chosen Teammate: 0  2
+[INFO 09:11:14] root Runing batch
+[INFO 09:11:19] root Get batch
+[INFO 09:11:19] root episode 7040 Inserted
+[INFO 09:11:19] my_main ================ MetaEpoch: 7072 ================
+[INFO 09:11:19] my_main Time passed: 16 minutes, 15 seconds
+[INFO 09:11:19] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:19] my_main Chosen Teammate: 1  0
+[INFO 09:11:19] root Runing batch
+[INFO 09:11:24] root Get batch
+[INFO 09:11:24] root episode 7072 Inserted
+[INFO 09:11:24] my_main ================ MetaEpoch: 7104 ================
+[INFO 09:11:24] my_main Time passed: 16 minutes, 20 seconds
+[INFO 09:11:24] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:24] my_main Chosen Teammate: 2  1
+[INFO 09:11:24] root Runing batch
+[INFO 09:11:30] root Get batch
+[INFO 09:11:30] root episode 7104 Inserted
+[INFO 09:11:30] my_main ================ MetaEpoch: 7136 ================
+[INFO 09:11:30] my_main Time passed: 16 minutes, 25 seconds
+[INFO 09:11:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:30] my_main Chosen Teammate: 3  3
+[INFO 09:11:30] root Runing batch
+[INFO 09:11:34] root Get batch
+[INFO 09:11:34] root episode 7136 Inserted
+[INFO 09:11:36] root Trajectories saved to saves/buffer_7168.pkl.
+[INFO 09:11:36] my_main ================ MetaEpoch: 7168 ================
+[INFO 09:11:36] my_main Time passed: 16 minutes, 31 seconds
+[INFO 09:11:36] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:36] my_main Chosen Teammate: 0  2
+[INFO 09:11:36] root Runing batch
+[INFO 09:11:40] root Get batch
+[INFO 09:11:40] root episode 7168 Inserted
+[INFO 09:11:40] my_main ================ MetaEpoch: 7200 ================
+[INFO 09:11:40] my_main Time passed: 16 minutes, 36 seconds
+[INFO 09:11:40] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:40] my_main Chosen Teammate: 1  0
+[INFO 09:11:40] root Runing batch
+[INFO 09:11:45] root Get batch
+[INFO 09:11:45] root episode 7200 Inserted
+[INFO 09:11:45] my_main ================ MetaEpoch: 7232 ================
+[INFO 09:11:45] my_main Time passed: 16 minutes, 40 seconds
+[INFO 09:11:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:45] my_main Chosen Teammate: 2  1
+[INFO 09:11:45] root Runing batch
+[INFO 09:11:52] root Get batch
+[INFO 09:11:52] root episode 7232 Inserted
+[INFO 09:11:52] my_main ================ MetaEpoch: 7264 ================
+[INFO 09:11:52] my_main Time passed: 16 minutes, 47 seconds
+[INFO 09:11:52] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:52] my_main Chosen Teammate: 3  3
+[INFO 09:11:52] root Runing batch
+[INFO 09:11:59] root Get batch
+[INFO 09:11:59] root episode 7264 Inserted
+[INFO 09:11:59] my_main ================ MetaEpoch: 7296 ================
+[INFO 09:11:59] my_main Time passed: 16 minutes, 54 seconds
+[INFO 09:11:59] my_main Status: [0, 0, 0, 0]
+[INFO 09:11:59] my_main Chosen Teammate: 0  2
+[INFO 09:11:59] root Runing batch
+[INFO 09:12:08] root Get batch
+[INFO 09:12:08] root episode 7296 Inserted
+[INFO 09:12:08] my_main ================ MetaEpoch: 7328 ================
+[INFO 09:12:08] my_main Time passed: 17 minutes, 3 seconds
+[INFO 09:12:08] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:08] my_main Chosen Teammate: 1  0
+[INFO 09:12:08] root Runing batch
+[INFO 09:12:18] root Get batch
+[INFO 09:12:18] root episode 7328 Inserted
+[INFO 09:12:18] my_main ================ MetaEpoch: 7360 ================
+[INFO 09:12:18] my_main Time passed: 17 minutes, 14 seconds
+[INFO 09:12:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:18] my_main Chosen Teammate: 2  1
+[INFO 09:12:18] root Runing batch
+[INFO 09:12:33] root Get batch
+[INFO 09:12:33] root episode 7360 Inserted
+[INFO 09:12:33] my_main ================ MetaEpoch: 7392 ================
+[INFO 09:12:33] my_main Time passed: 17 minutes, 28 seconds
+[INFO 09:12:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:33] my_main Chosen Teammate: 3  3
+[INFO 09:12:33] root Runing batch
+[INFO 09:12:39] root Get batch
+[INFO 09:12:39] root episode 7392 Inserted
+[INFO 09:12:39] my_main ================ MetaEpoch: 7424 ================
+[INFO 09:12:39] my_main Time passed: 17 minutes, 34 seconds
+[INFO 09:12:39] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:39] my_main Chosen Teammate: 0  2
+[INFO 09:12:39] root Runing batch
+[INFO 09:12:48] root Get batch
+[INFO 09:12:48] root episode 7424 Inserted
+[INFO 09:12:48] my_main ================ MetaEpoch: 7456 ================
+[INFO 09:12:48] my_main Time passed: 17 minutes, 43 seconds
+[INFO 09:12:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:48] my_main Chosen Teammate: 1  0
+[INFO 09:12:48] root Runing batch
+[INFO 09:12:57] root Get batch
+[INFO 09:12:57] root episode 7456 Inserted
+[INFO 09:12:57] my_main ================ MetaEpoch: 7488 ================
+[INFO 09:12:57] my_main Time passed: 17 minutes, 52 seconds
+[INFO 09:12:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:12:57] my_main Chosen Teammate: 2  1
+[INFO 09:12:57] root Runing batch
+[INFO 09:13:02] root Get batch
+[INFO 09:13:02] root episode 7488 Inserted
+[INFO 09:13:02] my_main ================ MetaEpoch: 7520 ================
+[INFO 09:13:02] my_main Time passed: 17 minutes, 57 seconds
+[INFO 09:13:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:02] my_main Chosen Teammate: 3  3
+[INFO 09:13:02] root Runing batch
+[INFO 09:13:07] root Get batch
+[INFO 09:13:07] root episode 7520 Inserted
+[INFO 09:13:07] my_main ================ MetaEpoch: 7552 ================
+[INFO 09:13:07] my_main Time passed: 18 minutes, 2 seconds
+[INFO 09:13:07] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:07] my_main Chosen Teammate: 0  2
+[INFO 09:13:07] root Runing batch
+[INFO 09:13:11] root Get batch
+[INFO 09:13:11] root episode 7552 Inserted
+[INFO 09:13:11] my_main ================ MetaEpoch: 7584 ================
+[INFO 09:13:11] my_main Time passed: 18 minutes, 7 seconds
+[INFO 09:13:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:11] my_main Chosen Teammate: 1  0
+[INFO 09:13:11] root Runing batch
+[INFO 09:13:16] root Get batch
+[INFO 09:13:16] root episode 7584 Inserted
+[INFO 09:13:16] my_main ================ MetaEpoch: 7616 ================
+[INFO 09:13:16] my_main Time passed: 18 minutes, 11 seconds
+[INFO 09:13:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:16] my_main Chosen Teammate: 2  1
+[INFO 09:13:16] root Runing batch
+[INFO 09:13:20] root Get batch
+[INFO 09:13:20] root episode 7616 Inserted
+[INFO 09:13:20] my_main ================ MetaEpoch: 7648 ================
+[INFO 09:13:20] my_main Time passed: 18 minutes, 16 seconds
+[INFO 09:13:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:20] my_main Chosen Teammate: 3  3
+[INFO 09:13:20] root Runing batch
+[INFO 09:13:25] root Get batch
+[INFO 09:13:25] root episode 7648 Inserted
+[INFO 09:13:25] my_main ================ MetaEpoch: 7680 ================
+[INFO 09:13:25] my_main Time passed: 18 minutes, 20 seconds
+[INFO 09:13:25] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:25] my_main Chosen Teammate: 0  2
+[INFO 09:13:25] root Runing batch
+[INFO 09:13:30] root Get batch
+[INFO 09:13:30] root episode 7680 Inserted
+[INFO 09:13:30] my_main ================ MetaEpoch: 7712 ================
+[INFO 09:13:30] my_main Time passed: 18 minutes, 25 seconds
+[INFO 09:13:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:30] my_main Chosen Teammate: 1  0
+[INFO 09:13:30] root Runing batch
+[INFO 09:13:36] root Get batch
+[INFO 09:13:36] root episode 7712 Inserted
+[INFO 09:13:36] my_main ================ MetaEpoch: 7744 ================
+[INFO 09:13:36] my_main Time passed: 18 minutes, 31 seconds
+[INFO 09:13:36] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:36] my_main Chosen Teammate: 2  1
+[INFO 09:13:36] root Runing batch
+[INFO 09:13:45] root Get batch
+[INFO 09:13:45] root episode 7744 Inserted
+[INFO 09:13:45] my_main ================ MetaEpoch: 7776 ================
+[INFO 09:13:45] my_main Time passed: 18 minutes, 40 seconds
+[INFO 09:13:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:45] my_main Chosen Teammate: 3  3
+[INFO 09:13:45] root Runing batch
+[INFO 09:13:54] root Get batch
+[INFO 09:13:54] root episode 7776 Inserted
+[INFO 09:13:54] my_main ================ MetaEpoch: 7808 ================
+[INFO 09:13:54] my_main Time passed: 18 minutes, 50 seconds
+[INFO 09:13:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:13:54] my_main Chosen Teammate: 0  2
+[INFO 09:13:54] root Runing batch
+[INFO 09:14:02] root Get batch
+[INFO 09:14:02] root episode 7808 Inserted
+[INFO 09:14:02] my_main ================ MetaEpoch: 7840 ================
+[INFO 09:14:02] my_main Time passed: 18 minutes, 57 seconds
+[INFO 09:14:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:02] my_main Chosen Teammate: 1  0
+[INFO 09:14:02] root Runing batch
+[INFO 09:14:09] root Get batch
+[INFO 09:14:09] root episode 7840 Inserted
+[INFO 09:14:09] my_main ================ MetaEpoch: 7872 ================
+[INFO 09:14:09] my_main Time passed: 19 minutes, 5 seconds
+[INFO 09:14:09] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:09] my_main Chosen Teammate: 2  1
+[INFO 09:14:09] root Runing batch
+[INFO 09:14:18] root Get batch
+[INFO 09:14:18] root episode 7872 Inserted
+[INFO 09:14:18] my_main ================ MetaEpoch: 7904 ================
+[INFO 09:14:18] my_main Time passed: 19 minutes, 14 seconds
+[INFO 09:14:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:18] my_main Chosen Teammate: 3  3
+[INFO 09:14:18] root Runing batch
+[INFO 09:14:27] root Get batch
+[INFO 09:14:27] root episode 7904 Inserted
+[INFO 09:14:27] my_main ================ MetaEpoch: 7936 ================
+[INFO 09:14:27] my_main Time passed: 19 minutes, 22 seconds
+[INFO 09:14:27] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:27] my_main Chosen Teammate: 0  2
+[INFO 09:14:27] root Runing batch
+[INFO 09:14:35] root Get batch
+[INFO 09:14:35] root episode 7936 Inserted
+[INFO 09:14:35] my_main ================ MetaEpoch: 7968 ================
+[INFO 09:14:35] my_main Time passed: 19 minutes, 30 seconds
+[INFO 09:14:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:35] my_main Chosen Teammate: 1  0
+[INFO 09:14:35] root Runing batch
+[INFO 09:14:47] root Get batch
+[INFO 09:14:47] root episode 7968 Inserted
+[INFO 09:14:47] my_main ================ MetaEpoch: 8000 ================
+[INFO 09:14:47] my_main Time passed: 19 minutes, 42 seconds
+[INFO 09:14:47] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:47] my_main Chosen Teammate: 2  1
+[INFO 09:14:47] root Runing batch
+[INFO 09:14:51] root Get batch
+[INFO 09:14:51] root episode 8000 Inserted
+[INFO 09:14:51] my_main ================ MetaEpoch: 8032 ================
+[INFO 09:14:51] my_main Time passed: 19 minutes, 47 seconds
+[INFO 09:14:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:51] my_main Chosen Teammate: 3  3
+[INFO 09:14:51] root Runing batch
+[INFO 09:14:56] root Get batch
+[INFO 09:14:56] root episode 8032 Inserted
+[INFO 09:14:56] my_main ================ MetaEpoch: 8064 ================
+[INFO 09:14:56] my_main Time passed: 19 minutes, 51 seconds
+[INFO 09:14:56] my_main Status: [0, 0, 0, 0]
+[INFO 09:14:56] my_main Chosen Teammate: 0  2
+[INFO 09:14:56] root Runing batch
+[INFO 09:15:01] root Get batch
+[INFO 09:15:01] root episode 8064 Inserted
+[INFO 09:15:01] my_main ================ MetaEpoch: 8096 ================
+[INFO 09:15:01] my_main Time passed: 19 minutes, 56 seconds
+[INFO 09:15:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:01] my_main Chosen Teammate: 1  0
+[INFO 09:15:01] root Runing batch
+[INFO 09:15:06] root Get batch
+[INFO 09:15:06] root episode 8096 Inserted
+[INFO 09:15:06] my_main ================ MetaEpoch: 8128 ================
+[INFO 09:15:06] my_main Time passed: 20 minutes, 1 seconds
+[INFO 09:15:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:06] my_main Chosen Teammate: 2  1
+[INFO 09:15:06] root Runing batch
+[INFO 09:15:11] root Get batch
+[INFO 09:15:11] root episode 8128 Inserted
+[INFO 09:15:11] my_main ================ MetaEpoch: 8160 ================
+[INFO 09:15:11] my_main Time passed: 20 minutes, 6 seconds
+[INFO 09:15:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:11] my_main Chosen Teammate: 3  3
+[INFO 09:15:11] root Runing batch
+[INFO 09:15:16] root Get batch
+[INFO 09:15:16] root episode 8160 Inserted
+[INFO 09:15:18] root Trajectories saved to saves/buffer_8192.pkl.
+[INFO 09:15:18] my_main ================ MetaEpoch: 8192 ================
+[INFO 09:15:18] my_main Time passed: 20 minutes, 13 seconds
+[INFO 09:15:18] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:18] my_main Chosen Teammate: 0  2
+[INFO 09:15:18] root Runing batch
+[INFO 09:15:28] root Get batch
+[INFO 09:15:28] root episode 8192 Inserted
+[INFO 09:15:28] my_main ================ MetaEpoch: 8224 ================
+[INFO 09:15:28] my_main Time passed: 20 minutes, 24 seconds
+[INFO 09:15:28] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:28] my_main Chosen Teammate: 1  0
+[INFO 09:15:28] root Runing batch
+[INFO 09:15:37] root Get batch
+[INFO 09:15:37] root episode 8224 Inserted
+[INFO 09:15:37] my_main ================ MetaEpoch: 8256 ================
+[INFO 09:15:37] my_main Time passed: 20 minutes, 33 seconds
+[INFO 09:15:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:37] my_main Chosen Teammate: 2  1
+[INFO 09:15:37] root Runing batch
+[INFO 09:15:45] root Get batch
+[INFO 09:15:45] root episode 8256 Inserted
+[INFO 09:15:45] my_main ================ MetaEpoch: 8288 ================
+[INFO 09:15:45] my_main Time passed: 20 minutes, 41 seconds
+[INFO 09:15:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:45] my_main Chosen Teammate: 3  3
+[INFO 09:15:45] root Runing batch
+[INFO 09:15:54] root Get batch
+[INFO 09:15:54] root episode 8288 Inserted
+[INFO 09:15:54] my_main ================ MetaEpoch: 8320 ================
+[INFO 09:15:54] my_main Time passed: 20 minutes, 49 seconds
+[INFO 09:15:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:15:54] my_main Chosen Teammate: 0  2
+[INFO 09:15:54] root Runing batch
+[INFO 09:16:01] root Get batch
+[INFO 09:16:01] root episode 8320 Inserted
+[INFO 09:16:01] my_main ================ MetaEpoch: 8352 ================
+[INFO 09:16:01] my_main Time passed: 20 minutes, 56 seconds
+[INFO 09:16:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:01] my_main Chosen Teammate: 1  0
+[INFO 09:16:01] root Runing batch
+[INFO 09:16:10] root Get batch
+[INFO 09:16:10] root episode 8352 Inserted
+[INFO 09:16:10] my_main ================ MetaEpoch: 8384 ================
+[INFO 09:16:10] my_main Time passed: 21 minutes, 6 seconds
+[INFO 09:16:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:10] my_main Chosen Teammate: 2  1
+[INFO 09:16:10] root Runing batch
+[INFO 09:16:20] root Get batch
+[INFO 09:16:20] root episode 8384 Inserted
+[INFO 09:16:20] my_main ================ MetaEpoch: 8416 ================
+[INFO 09:16:20] my_main Time passed: 21 minutes, 15 seconds
+[INFO 09:16:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:20] my_main Chosen Teammate: 3  3
+[INFO 09:16:20] root Runing batch
+[INFO 09:16:29] root Get batch
+[INFO 09:16:29] root episode 8416 Inserted
+[INFO 09:16:29] my_main ================ MetaEpoch: 8448 ================
+[INFO 09:16:29] my_main Time passed: 21 minutes, 24 seconds
+[INFO 09:16:29] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:29] my_main Chosen Teammate: 0  2
+[INFO 09:16:29] root Runing batch
+[INFO 09:16:34] root Get batch
+[INFO 09:16:34] root episode 8448 Inserted
+[INFO 09:16:34] my_main ================ MetaEpoch: 8480 ================
+[INFO 09:16:34] my_main Time passed: 21 minutes, 29 seconds
+[INFO 09:16:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:34] my_main Chosen Teammate: 1  0
+[INFO 09:16:34] root Runing batch
+[INFO 09:16:38] root Get batch
+[INFO 09:16:38] root episode 8480 Inserted
+[INFO 09:16:38] my_main ================ MetaEpoch: 8512 ================
+[INFO 09:16:38] my_main Time passed: 21 minutes, 33 seconds
+[INFO 09:16:38] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:38] my_main Chosen Teammate: 2  1
+[INFO 09:16:38] root Runing batch
+[INFO 09:16:43] root Get batch
+[INFO 09:16:43] root episode 8512 Inserted
+[INFO 09:16:43] my_main ================ MetaEpoch: 8544 ================
+[INFO 09:16:43] my_main Time passed: 21 minutes, 38 seconds
+[INFO 09:16:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:43] my_main Chosen Teammate: 3  3
+[INFO 09:16:43] root Runing batch
+[INFO 09:16:48] root Get batch
+[INFO 09:16:48] root episode 8544 Inserted
+[INFO 09:16:48] my_main ================ MetaEpoch: 8576 ================
+[INFO 09:16:48] my_main Time passed: 21 minutes, 43 seconds
+[INFO 09:16:48] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:48] my_main Chosen Teammate: 0  2
+[INFO 09:16:48] root Runing batch
+[INFO 09:16:52] root Get batch
+[INFO 09:16:52] root episode 8576 Inserted
+[INFO 09:16:52] my_main ================ MetaEpoch: 8608 ================
+[INFO 09:16:52] my_main Time passed: 21 minutes, 47 seconds
+[INFO 09:16:52] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:52] my_main Chosen Teammate: 1  0
+[INFO 09:16:52] root Runing batch
+[INFO 09:16:57] root Get batch
+[INFO 09:16:57] root episode 8608 Inserted
+[INFO 09:16:57] my_main ================ MetaEpoch: 8640 ================
+[INFO 09:16:57] my_main Time passed: 21 minutes, 52 seconds
+[INFO 09:16:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:16:57] my_main Chosen Teammate: 2  1
+[INFO 09:16:57] root Runing batch
+[INFO 09:17:02] root Get batch
+[INFO 09:17:02] root episode 8640 Inserted
+[INFO 09:17:02] my_main ================ MetaEpoch: 8672 ================
+[INFO 09:17:02] my_main Time passed: 21 minutes, 58 seconds
+[INFO 09:17:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:02] my_main Chosen Teammate: 3  3
+[INFO 09:17:02] root Runing batch
+[INFO 09:17:10] root Get batch
+[INFO 09:17:10] root episode 8672 Inserted
+[INFO 09:17:10] my_main ================ MetaEpoch: 8704 ================
+[INFO 09:17:10] my_main Time passed: 22 minutes, 5 seconds
+[INFO 09:17:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:10] my_main Chosen Teammate: 0  2
+[INFO 09:17:10] root Runing batch
+[INFO 09:17:20] root Get batch
+[INFO 09:17:20] root episode 8704 Inserted
+[INFO 09:17:20] my_main ================ MetaEpoch: 8736 ================
+[INFO 09:17:20] my_main Time passed: 22 minutes, 15 seconds
+[INFO 09:17:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:20] my_main Chosen Teammate: 1  0
+[INFO 09:17:20] root Runing batch
+[INFO 09:17:30] root Get batch
+[INFO 09:17:30] root episode 8736 Inserted
+[INFO 09:17:30] my_main ================ MetaEpoch: 8768 ================
+[INFO 09:17:30] my_main Time passed: 22 minutes, 25 seconds
+[INFO 09:17:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:30] my_main Chosen Teammate: 2  1
+[INFO 09:17:30] root Runing batch
+[INFO 09:17:38] root Get batch
+[INFO 09:17:38] root episode 8768 Inserted
+[INFO 09:17:38] my_main ================ MetaEpoch: 8800 ================
+[INFO 09:17:38] my_main Time passed: 22 minutes, 33 seconds
+[INFO 09:17:38] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:38] my_main Chosen Teammate: 3  3
+[INFO 09:17:38] root Runing batch
+[INFO 09:17:47] root Get batch
+[INFO 09:17:47] root episode 8800 Inserted
+[INFO 09:17:47] my_main ================ MetaEpoch: 8832 ================
+[INFO 09:17:47] my_main Time passed: 22 minutes, 42 seconds
+[INFO 09:17:47] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:47] my_main Chosen Teammate: 0  2
+[INFO 09:17:47] root Runing batch
+[INFO 09:17:55] root Get batch
+[INFO 09:17:55] root episode 8832 Inserted
+[INFO 09:17:55] my_main ================ MetaEpoch: 8864 ================
+[INFO 09:17:55] my_main Time passed: 22 minutes, 50 seconds
+[INFO 09:17:55] my_main Status: [0, 0, 0, 0]
+[INFO 09:17:55] my_main Chosen Teammate: 1  0
+[INFO 09:17:55] root Runing batch
+[INFO 09:18:09] root Get batch
+[INFO 09:18:09] root episode 8864 Inserted
+[INFO 09:18:09] my_main ================ MetaEpoch: 8896 ================
+[INFO 09:18:09] my_main Time passed: 23 minutes, 4 seconds
+[INFO 09:18:09] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:09] my_main Chosen Teammate: 2  1
+[INFO 09:18:09] root Runing batch
+[INFO 09:18:16] root Get batch
+[INFO 09:18:16] root episode 8896 Inserted
+[INFO 09:18:16] my_main ================ MetaEpoch: 8928 ================
+[INFO 09:18:16] my_main Time passed: 23 minutes, 12 seconds
+[INFO 09:18:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:16] my_main Chosen Teammate: 3  3
+[INFO 09:18:16] root Runing batch
+[INFO 09:18:21] root Get batch
+[INFO 09:18:21] root episode 8928 Inserted
+[INFO 09:18:21] my_main ================ MetaEpoch: 8960 ================
+[INFO 09:18:21] my_main Time passed: 23 minutes, 16 seconds
+[INFO 09:18:21] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:21] my_main Chosen Teammate: 0  2
+[INFO 09:18:21] root Runing batch
+[INFO 09:18:26] root Get batch
+[INFO 09:18:26] root episode 8960 Inserted
+[INFO 09:18:26] my_main ================ MetaEpoch: 8992 ================
+[INFO 09:18:26] my_main Time passed: 23 minutes, 21 seconds
+[INFO 09:18:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:26] my_main Chosen Teammate: 1  0
+[INFO 09:18:26] root Runing batch
+[INFO 09:18:30] root Get batch
+[INFO 09:18:30] root episode 8992 Inserted
+[INFO 09:18:30] my_main ================ MetaEpoch: 9024 ================
+[INFO 09:18:30] my_main Time passed: 23 minutes, 26 seconds
+[INFO 09:18:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:30] my_main Chosen Teammate: 2  1
+[INFO 09:18:30] root Runing batch
+[INFO 09:18:35] root Get batch
+[INFO 09:18:35] root episode 9024 Inserted
+[INFO 09:18:35] my_main ================ MetaEpoch: 9056 ================
+[INFO 09:18:35] my_main Time passed: 23 minutes, 30 seconds
+[INFO 09:18:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:35] my_main Chosen Teammate: 3  3
+[INFO 09:18:35] root Runing batch
+[INFO 09:18:39] root Get batch
+[INFO 09:18:39] root episode 9056 Inserted
+[INFO 09:18:39] my_main ================ MetaEpoch: 9088 ================
+[INFO 09:18:39] my_main Time passed: 23 minutes, 35 seconds
+[INFO 09:18:39] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:39] my_main Chosen Teammate: 0  2
+[INFO 09:18:39] root Runing batch
+[INFO 09:18:44] root Get batch
+[INFO 09:18:44] root episode 9088 Inserted
+[INFO 09:18:44] my_main ================ MetaEpoch: 9120 ================
+[INFO 09:18:44] my_main Time passed: 23 minutes, 39 seconds
+[INFO 09:18:44] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:44] my_main Chosen Teammate: 1  0
+[INFO 09:18:44] root Runing batch
+[INFO 09:18:53] root Get batch
+[INFO 09:18:53] root episode 9120 Inserted
+[INFO 09:18:53] my_main ================ MetaEpoch: 9152 ================
+[INFO 09:18:53] my_main Time passed: 23 minutes, 49 seconds
+[INFO 09:18:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:18:53] my_main Chosen Teammate: 2  1
+[INFO 09:18:53] root Runing batch
+[INFO 09:19:02] root Get batch
+[INFO 09:19:02] root episode 9152 Inserted
+[INFO 09:19:02] my_main ================ MetaEpoch: 9184 ================
+[INFO 09:19:02] my_main Time passed: 23 minutes, 57 seconds
+[INFO 09:19:02] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:02] my_main Chosen Teammate: 3  3
+[INFO 09:19:02] root Runing batch
+[INFO 09:19:14] root Get batch
+[INFO 09:19:14] root episode 9184 Inserted
+[INFO 09:19:16] root Trajectories saved to saves/buffer_9216.pkl.
+[INFO 09:19:16] my_main ================ MetaEpoch: 9216 ================
+[INFO 09:19:16] my_main Time passed: 24 minutes, 11 seconds
+[INFO 09:19:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:16] my_main Chosen Teammate: 0  2
+[INFO 09:19:16] root Runing batch
+[INFO 09:19:26] root Get batch
+[INFO 09:19:26] root episode 9216 Inserted
+[INFO 09:19:26] my_main ================ MetaEpoch: 9248 ================
+[INFO 09:19:26] my_main Time passed: 24 minutes, 21 seconds
+[INFO 09:19:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:26] my_main Chosen Teammate: 1  0
+[INFO 09:19:26] root Runing batch
+[INFO 09:19:35] root Get batch
+[INFO 09:19:35] root episode 9248 Inserted
+[INFO 09:19:35] my_main ================ MetaEpoch: 9280 ================
+[INFO 09:19:35] my_main Time passed: 24 minutes, 30 seconds
+[INFO 09:19:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:35] my_main Chosen Teammate: 2  1
+[INFO 09:19:35] root Runing batch
+[INFO 09:19:46] root Get batch
+[INFO 09:19:46] root episode 9280 Inserted
+[INFO 09:19:46] my_main ================ MetaEpoch: 9312 ================
+[INFO 09:19:46] my_main Time passed: 24 minutes, 41 seconds
+[INFO 09:19:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:46] my_main Chosen Teammate: 3  3
+[INFO 09:19:46] root Runing batch
+[INFO 09:19:52] root Get batch
+[INFO 09:19:52] root episode 9312 Inserted
+[INFO 09:19:52] my_main ================ MetaEpoch: 9344 ================
+[INFO 09:19:52] my_main Time passed: 24 minutes, 47 seconds
+[INFO 09:19:52] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:52] my_main Chosen Teammate: 0  2
+[INFO 09:19:52] root Runing batch
+[INFO 09:19:57] root Get batch
+[INFO 09:19:57] root episode 9344 Inserted
+[INFO 09:19:57] my_main ================ MetaEpoch: 9376 ================
+[INFO 09:19:57] my_main Time passed: 24 minutes, 52 seconds
+[INFO 09:19:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:19:57] my_main Chosen Teammate: 1  0
+[INFO 09:19:57] root Runing batch
+[INFO 09:20:04] root Get batch
+[INFO 09:20:04] root episode 9376 Inserted
+[INFO 09:20:04] my_main ================ MetaEpoch: 9408 ================
+[INFO 09:20:04] my_main Time passed: 25 minutes, 0 seconds
+[INFO 09:20:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:04] my_main Chosen Teammate: 2  1
+[INFO 09:20:04] root Runing batch
+[INFO 09:20:16] root Get batch
+[INFO 09:20:16] root episode 9408 Inserted
+[INFO 09:20:16] my_main ================ MetaEpoch: 9440 ================
+[INFO 09:20:16] my_main Time passed: 25 minutes, 11 seconds
+[INFO 09:20:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:16] my_main Chosen Teammate: 3  3
+[INFO 09:20:16] root Runing batch
+[INFO 09:20:28] root Get batch
+[INFO 09:20:28] root episode 9440 Inserted
+[INFO 09:20:28] my_main ================ MetaEpoch: 9472 ================
+[INFO 09:20:28] my_main Time passed: 25 minutes, 23 seconds
+[INFO 09:20:28] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:28] my_main Chosen Teammate: 0  2
+[INFO 09:20:28] root Runing batch
+[INFO 09:20:37] root Get batch
+[INFO 09:20:37] root episode 9472 Inserted
+[INFO 09:20:37] my_main ================ MetaEpoch: 9504 ================
+[INFO 09:20:37] my_main Time passed: 25 minutes, 32 seconds
+[INFO 09:20:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:37] my_main Chosen Teammate: 1  0
+[INFO 09:20:37] root Runing batch
+[INFO 09:20:46] root Get batch
+[INFO 09:20:46] root episode 9504 Inserted
+[INFO 09:20:46] my_main ================ MetaEpoch: 9536 ================
+[INFO 09:20:46] my_main Time passed: 25 minutes, 41 seconds
+[INFO 09:20:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:46] my_main Chosen Teammate: 2  1
+[INFO 09:20:46] root Runing batch
+[INFO 09:20:51] root Get batch
+[INFO 09:20:51] root episode 9536 Inserted
+[INFO 09:20:51] my_main ================ MetaEpoch: 9568 ================
+[INFO 09:20:51] my_main Time passed: 25 minutes, 46 seconds
+[INFO 09:20:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:51] my_main Chosen Teammate: 3  3
+[INFO 09:20:51] root Runing batch
+[INFO 09:20:56] root Get batch
+[INFO 09:20:56] root episode 9568 Inserted
+[INFO 09:20:56] my_main ================ MetaEpoch: 9600 ================
+[INFO 09:20:56] my_main Time passed: 25 minutes, 51 seconds
+[INFO 09:20:56] my_main Status: [0, 0, 0, 0]
+[INFO 09:20:56] my_main Chosen Teammate: 0  2
+[INFO 09:20:56] root Runing batch
+[INFO 09:21:01] root Get batch
+[INFO 09:21:01] root episode 9600 Inserted
+[INFO 09:21:01] my_main ================ MetaEpoch: 9632 ================
+[INFO 09:21:01] my_main Time passed: 25 minutes, 56 seconds
+[INFO 09:21:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:01] my_main Chosen Teammate: 1  0
+[INFO 09:21:01] root Runing batch
+[INFO 09:21:06] root Get batch
+[INFO 09:21:06] root episode 9632 Inserted
+[INFO 09:21:06] my_main ================ MetaEpoch: 9664 ================
+[INFO 09:21:06] my_main Time passed: 26 minutes, 1 seconds
+[INFO 09:21:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:06] my_main Chosen Teammate: 2  1
+[INFO 09:21:06] root Runing batch
+[INFO 09:21:11] root Get batch
+[INFO 09:21:11] root episode 9664 Inserted
+[INFO 09:21:11] my_main ================ MetaEpoch: 9696 ================
+[INFO 09:21:11] my_main Time passed: 26 minutes, 7 seconds
+[INFO 09:21:11] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:11] my_main Chosen Teammate: 3  3
+[INFO 09:21:11] root Runing batch
+[INFO 09:21:16] root Get batch
+[INFO 09:21:16] root episode 9696 Inserted
+[INFO 09:21:16] my_main ================ MetaEpoch: 9728 ================
+[INFO 09:21:16] my_main Time passed: 26 minutes, 11 seconds
+[INFO 09:21:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:16] my_main Chosen Teammate: 0  2
+[INFO 09:21:16] root Runing batch
+[INFO 09:21:24] root Get batch
+[INFO 09:21:24] root episode 9728 Inserted
+[INFO 09:21:24] my_main ================ MetaEpoch: 9760 ================
+[INFO 09:21:24] my_main Time passed: 26 minutes, 20 seconds
+[INFO 09:21:24] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:24] my_main Chosen Teammate: 1  0
+[INFO 09:21:24] root Runing batch
+[INFO 09:21:35] root Get batch
+[INFO 09:21:35] root episode 9760 Inserted
+[INFO 09:21:35] my_main ================ MetaEpoch: 9792 ================
+[INFO 09:21:35] my_main Time passed: 26 minutes, 30 seconds
+[INFO 09:21:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:35] my_main Chosen Teammate: 2  1
+[INFO 09:21:35] root Runing batch
+[INFO 09:21:46] root Get batch
+[INFO 09:21:46] root episode 9792 Inserted
+[INFO 09:21:46] my_main ================ MetaEpoch: 9824 ================
+[INFO 09:21:46] my_main Time passed: 26 minutes, 41 seconds
+[INFO 09:21:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:46] my_main Chosen Teammate: 3  3
+[INFO 09:21:46] root Runing batch
+[INFO 09:21:57] root Get batch
+[INFO 09:21:57] root episode 9824 Inserted
+[INFO 09:21:57] my_main ================ MetaEpoch: 9856 ================
+[INFO 09:21:57] my_main Time passed: 26 minutes, 52 seconds
+[INFO 09:21:57] my_main Status: [0, 0, 0, 0]
+[INFO 09:21:57] my_main Chosen Teammate: 0  2
+[INFO 09:21:57] root Runing batch
+[INFO 09:22:06] root Get batch
+[INFO 09:22:06] root episode 9856 Inserted
+[INFO 09:22:06] my_main ================ MetaEpoch: 9888 ================
+[INFO 09:22:06] my_main Time passed: 27 minutes, 2 seconds
+[INFO 09:22:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:06] my_main Chosen Teammate: 1  0
+[INFO 09:22:06] root Runing batch
+[INFO 09:22:16] root Get batch
+[INFO 09:22:16] root episode 9888 Inserted
+[INFO 09:22:16] my_main ================ MetaEpoch: 9920 ================
+[INFO 09:22:16] my_main Time passed: 27 minutes, 11 seconds
+[INFO 09:22:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:16] my_main Chosen Teammate: 2  1
+[INFO 09:22:16] root Runing batch
+[INFO 09:22:26] root Get batch
+[INFO 09:22:26] root episode 9920 Inserted
+[INFO 09:22:26] my_main ================ MetaEpoch: 9952 ================
+[INFO 09:22:26] my_main Time passed: 27 minutes, 22 seconds
+[INFO 09:22:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:26] my_main Chosen Teammate: 3  3
+[INFO 09:22:26] root Runing batch
+[INFO 09:22:37] root Get batch
+[INFO 09:22:37] root episode 9952 Inserted
+[INFO 09:22:37] my_main ================ MetaEpoch: 9984 ================
+[INFO 09:22:37] my_main Time passed: 27 minutes, 32 seconds
+[INFO 09:22:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:37] my_main Chosen Teammate: 0  2
+[INFO 09:22:37] root Runing batch
+[INFO 09:22:47] root Get batch
+[INFO 09:22:47] root episode 9984 Inserted
+[INFO 09:22:47] my_main ================ MetaEpoch: 10016 ================
+[INFO 09:22:47] my_main Time passed: 27 minutes, 42 seconds
+[INFO 09:22:47] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:47] my_main Chosen Teammate: 1  0
+[INFO 09:22:47] root Runing batch
+[INFO 09:22:58] root Get batch
+[INFO 09:22:58] root episode 10016 Inserted
+[INFO 09:22:58] my_main ================ MetaEpoch: 10048 ================
+[INFO 09:22:58] my_main Time passed: 27 minutes, 53 seconds
+[INFO 09:22:58] my_main Status: [0, 0, 0, 0]
+[INFO 09:22:58] my_main Chosen Teammate: 2  1
+[INFO 09:22:58] root Runing batch
+[INFO 09:23:10] root Get batch
+[INFO 09:23:10] root episode 10048 Inserted
+[INFO 09:23:10] my_main ================ MetaEpoch: 10080 ================
+[INFO 09:23:10] my_main Time passed: 28 minutes, 5 seconds
+[INFO 09:23:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:23:10] my_main Chosen Teammate: 3  3
+[INFO 09:23:10] root Runing batch
+[INFO 09:23:21] root Get batch
+[INFO 09:23:21] root episode 10080 Inserted
+[INFO 09:23:21] my_main ================ MetaEpoch: 10112 ================
+[INFO 09:23:21] my_main Time passed: 28 minutes, 16 seconds
+[INFO 09:23:21] my_main Status: [0, 0, 0, 0]
+[INFO 09:23:21] my_main Chosen Teammate: 0  2
+[INFO 09:23:21] root Runing batch
+[INFO 09:23:34] root Get batch
+[INFO 09:23:34] root episode 10112 Inserted
+[INFO 09:23:34] my_main ================ MetaEpoch: 10144 ================
+[INFO 09:23:34] my_main Time passed: 28 minutes, 29 seconds
+[INFO 09:23:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:23:34] my_main Chosen Teammate: 1  0
+[INFO 09:23:34] root Runing batch
+[INFO 09:23:45] root Get batch
+[INFO 09:23:45] root episode 10144 Inserted
+[INFO 09:23:45] my_main ================ MetaEpoch: 10176 ================
+[INFO 09:23:45] my_main Time passed: 28 minutes, 40 seconds
+[INFO 09:23:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:23:45] my_main Chosen Teammate: 2  1
+[INFO 09:23:45] root Runing batch
+[INFO 09:23:55] root Get batch
+[INFO 09:23:55] root episode 10176 Inserted
+[INFO 09:23:55] my_main ================ MetaEpoch: 10208 ================
+[INFO 09:23:55] my_main Time passed: 28 minutes, 50 seconds
+[INFO 09:23:55] my_main Status: [0, 0, 0, 0]
+[INFO 09:23:55] my_main Chosen Teammate: 3  3
+[INFO 09:23:55] root Runing batch
+[INFO 09:24:05] root Get batch
+[INFO 09:24:05] root episode 10208 Inserted
+[INFO 09:24:05] root Trajectories saved to saves/buffer_10240.pkl.
+[INFO 09:24:05] my_main ================ MetaEpoch: 10240 ================
+[INFO 09:24:05] my_main Time passed: 29 minutes, 1 seconds
+[INFO 09:24:05] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:05] my_main Chosen Teammate: 0  2
+[INFO 09:24:05] root Runing batch
+[INFO 09:24:16] root Get batch
+[INFO 09:24:16] root episode 10240 Inserted
+[INFO 09:24:16] my_main ================ MetaEpoch: 10272 ================
+[INFO 09:24:16] my_main Time passed: 29 minutes, 11 seconds
+[INFO 09:24:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:16] my_main Chosen Teammate: 1  0
+[INFO 09:24:16] root Runing batch
+[INFO 09:24:26] root Get batch
+[INFO 09:24:26] root episode 10272 Inserted
+[INFO 09:24:26] my_main ================ MetaEpoch: 10304 ================
+[INFO 09:24:26] my_main Time passed: 29 minutes, 21 seconds
+[INFO 09:24:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:26] my_main Chosen Teammate: 2  1
+[INFO 09:24:26] root Runing batch
+[INFO 09:24:35] root Get batch
+[INFO 09:24:35] root episode 10304 Inserted
+[INFO 09:24:35] my_main ================ MetaEpoch: 10336 ================
+[INFO 09:24:35] my_main Time passed: 29 minutes, 30 seconds
+[INFO 09:24:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:35] my_main Chosen Teammate: 3  3
+[INFO 09:24:35] root Runing batch
+[INFO 09:24:45] root Get batch
+[INFO 09:24:45] root episode 10336 Inserted
+[INFO 09:24:45] my_main ================ MetaEpoch: 10368 ================
+[INFO 09:24:45] my_main Time passed: 29 minutes, 40 seconds
+[INFO 09:24:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:45] my_main Chosen Teammate: 0  2
+[INFO 09:24:45] root Runing batch
+[INFO 09:24:54] root Get batch
+[INFO 09:24:54] root episode 10368 Inserted
+[INFO 09:24:54] my_main ================ MetaEpoch: 10400 ================
+[INFO 09:24:54] my_main Time passed: 29 minutes, 50 seconds
+[INFO 09:24:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:24:54] my_main Chosen Teammate: 1  0
+[INFO 09:24:54] root Runing batch
+[INFO 09:25:04] root Get batch
+[INFO 09:25:04] root episode 10400 Inserted
+[INFO 09:25:04] my_main ================ MetaEpoch: 10432 ================
+[INFO 09:25:04] my_main Time passed: 29 minutes, 59 seconds
+[INFO 09:25:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:04] my_main Chosen Teammate: 2  1
+[INFO 09:25:04] root Runing batch
+[INFO 09:25:13] root Get batch
+[INFO 09:25:13] root episode 10432 Inserted
+[INFO 09:25:13] my_main ================ MetaEpoch: 10464 ================
+[INFO 09:25:13] my_main Time passed: 30 minutes, 8 seconds
+[INFO 09:25:13] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:13] my_main Chosen Teammate: 3  3
+[INFO 09:25:13] root Runing batch
+[INFO 09:25:23] root Get batch
+[INFO 09:25:23] root episode 10464 Inserted
+[INFO 09:25:23] my_main ================ MetaEpoch: 10496 ================
+[INFO 09:25:23] my_main Time passed: 30 minutes, 19 seconds
+[INFO 09:25:23] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:23] my_main Chosen Teammate: 0  2
+[INFO 09:25:23] root Runing batch
+[INFO 09:25:34] root Get batch
+[INFO 09:25:34] root episode 10496 Inserted
+[INFO 09:25:34] my_main ================ MetaEpoch: 10528 ================
+[INFO 09:25:34] my_main Time passed: 30 minutes, 29 seconds
+[INFO 09:25:34] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:34] my_main Chosen Teammate: 1  0
+[INFO 09:25:34] root Runing batch
+[INFO 09:25:41] root Get batch
+[INFO 09:25:41] root episode 10528 Inserted
+[INFO 09:25:41] my_main ================ MetaEpoch: 10560 ================
+[INFO 09:25:41] my_main Time passed: 30 minutes, 36 seconds
+[INFO 09:25:41] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:41] my_main Chosen Teammate: 2  1
+[INFO 09:25:41] root Runing batch
+[INFO 09:25:46] root Get batch
+[INFO 09:25:46] root episode 10560 Inserted
+[INFO 09:25:46] my_main ================ MetaEpoch: 10592 ================
+[INFO 09:25:46] my_main Time passed: 30 minutes, 41 seconds
+[INFO 09:25:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:46] my_main Chosen Teammate: 3  3
+[INFO 09:25:46] root Runing batch
+[INFO 09:25:51] root Get batch
+[INFO 09:25:51] root episode 10592 Inserted
+[INFO 09:25:51] my_main ================ MetaEpoch: 10624 ================
+[INFO 09:25:51] my_main Time passed: 30 minutes, 46 seconds
+[INFO 09:25:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:51] my_main Chosen Teammate: 0  2
+[INFO 09:25:51] root Runing batch
+[INFO 09:25:56] root Get batch
+[INFO 09:25:56] root episode 10624 Inserted
+[INFO 09:25:56] my_main ================ MetaEpoch: 10656 ================
+[INFO 09:25:56] my_main Time passed: 30 minutes, 51 seconds
+[INFO 09:25:56] my_main Status: [0, 0, 0, 0]
+[INFO 09:25:56] my_main Chosen Teammate: 1  0
+[INFO 09:25:56] root Runing batch
+[INFO 09:26:01] root Get batch
+[INFO 09:26:01] root episode 10656 Inserted
+[INFO 09:26:01] my_main ================ MetaEpoch: 10688 ================
+[INFO 09:26:01] my_main Time passed: 30 minutes, 56 seconds
+[INFO 09:26:01] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:01] my_main Chosen Teammate: 2  1
+[INFO 09:26:01] root Runing batch
+[INFO 09:26:05] root Get batch
+[INFO 09:26:05] root episode 10688 Inserted
+[INFO 09:26:05] my_main ================ MetaEpoch: 10720 ================
+[INFO 09:26:05] my_main Time passed: 31 minutes, 0 seconds
+[INFO 09:26:05] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:05] my_main Chosen Teammate: 3  3
+[INFO 09:26:05] root Runing batch
+[INFO 09:26:10] root Get batch
+[INFO 09:26:10] root episode 10720 Inserted
+[INFO 09:26:10] my_main ================ MetaEpoch: 10752 ================
+[INFO 09:26:10] my_main Time passed: 31 minutes, 5 seconds
+[INFO 09:26:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:10] my_main Chosen Teammate: 0  2
+[INFO 09:26:10] root Runing batch
+[INFO 09:26:16] root Get batch
+[INFO 09:26:16] root episode 10752 Inserted
+[INFO 09:26:16] my_main ================ MetaEpoch: 10784 ================
+[INFO 09:26:16] my_main Time passed: 31 minutes, 11 seconds
+[INFO 09:26:16] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:16] my_main Chosen Teammate: 1  0
+[INFO 09:26:16] root Runing batch
+[INFO 09:26:25] root Get batch
+[INFO 09:26:25] root episode 10784 Inserted
+[INFO 09:26:25] my_main ================ MetaEpoch: 10816 ================
+[INFO 09:26:25] my_main Time passed: 31 minutes, 20 seconds
+[INFO 09:26:25] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:25] my_main Chosen Teammate: 2  1
+[INFO 09:26:25] root Runing batch
+[INFO 09:26:35] root Get batch
+[INFO 09:26:35] root episode 10816 Inserted
+[INFO 09:26:35] my_main ================ MetaEpoch: 10848 ================
+[INFO 09:26:35] my_main Time passed: 31 minutes, 30 seconds
+[INFO 09:26:35] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:35] my_main Chosen Teammate: 3  3
+[INFO 09:26:35] root Runing batch
+[INFO 09:26:45] root Get batch
+[INFO 09:26:45] root episode 10848 Inserted
+[INFO 09:26:45] my_main ================ MetaEpoch: 10880 ================
+[INFO 09:26:45] my_main Time passed: 31 minutes, 40 seconds
+[INFO 09:26:45] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:45] my_main Chosen Teammate: 0  2
+[INFO 09:26:45] root Runing batch
+[INFO 09:26:53] root Get batch
+[INFO 09:26:53] root episode 10880 Inserted
+[INFO 09:26:53] my_main ================ MetaEpoch: 10912 ================
+[INFO 09:26:53] my_main Time passed: 31 minutes, 49 seconds
+[INFO 09:26:53] my_main Status: [0, 0, 0, 0]
+[INFO 09:26:53] my_main Chosen Teammate: 1  0
+[INFO 09:26:53] root Runing batch
+[INFO 09:27:03] root Get batch
+[INFO 09:27:03] root episode 10912 Inserted
+[INFO 09:27:03] my_main ================ MetaEpoch: 10944 ================
+[INFO 09:27:03] my_main Time passed: 31 minutes, 59 seconds
+[INFO 09:27:03] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:03] my_main Chosen Teammate: 2  1
+[INFO 09:27:03] root Runing batch
+[INFO 09:27:12] root Get batch
+[INFO 09:27:12] root episode 10944 Inserted
+[INFO 09:27:12] my_main ================ MetaEpoch: 10976 ================
+[INFO 09:27:12] my_main Time passed: 32 minutes, 8 seconds
+[INFO 09:27:12] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:12] my_main Chosen Teammate: 3  3
+[INFO 09:27:12] root Runing batch
+[INFO 09:27:21] root Get batch
+[INFO 09:27:21] root episode 10976 Inserted
+[INFO 09:27:21] my_main ================ MetaEpoch: 11008 ================
+[INFO 09:27:21] my_main Time passed: 32 minutes, 17 seconds
+[INFO 09:27:21] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:21] my_main Chosen Teammate: 0  2
+[INFO 09:27:21] root Runing batch
+[INFO 09:27:33] root Get batch
+[INFO 09:27:33] root episode 11008 Inserted
+[INFO 09:27:33] my_main ================ MetaEpoch: 11040 ================
+[INFO 09:27:33] my_main Time passed: 32 minutes, 28 seconds
+[INFO 09:27:33] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:33] my_main Chosen Teammate: 1  0
+[INFO 09:27:33] root Runing batch
+[INFO 09:27:43] root Get batch
+[INFO 09:27:43] root episode 11040 Inserted
+[INFO 09:27:43] my_main ================ MetaEpoch: 11072 ================
+[INFO 09:27:43] my_main Time passed: 32 minutes, 39 seconds
+[INFO 09:27:43] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:43] my_main Chosen Teammate: 2  1
+[INFO 09:27:43] root Runing batch
+[INFO 09:27:54] root Get batch
+[INFO 09:27:54] root episode 11072 Inserted
+[INFO 09:27:54] my_main ================ MetaEpoch: 11104 ================
+[INFO 09:27:54] my_main Time passed: 32 minutes, 49 seconds
+[INFO 09:27:54] my_main Status: [0, 0, 0, 0]
+[INFO 09:27:54] my_main Chosen Teammate: 3  3
+[INFO 09:27:54] root Runing batch
+[INFO 09:28:04] root Get batch
+[INFO 09:28:04] root episode 11104 Inserted
+[INFO 09:28:04] my_main ================ MetaEpoch: 11136 ================
+[INFO 09:28:04] my_main Time passed: 32 minutes, 59 seconds
+[INFO 09:28:04] my_main Status: [0, 0, 0, 0]
+[INFO 09:28:04] my_main Chosen Teammate: 0  2
+[INFO 09:28:04] root Runing batch
+[INFO 09:28:14] root Get batch
+[INFO 09:28:14] root episode 11136 Inserted
+[INFO 09:28:14] my_main ================ MetaEpoch: 11168 ================
+[INFO 09:28:14] my_main Time passed: 33 minutes, 10 seconds
+[INFO 09:28:14] my_main Status: [0, 0, 0, 0]
+[INFO 09:28:14] my_main Chosen Teammate: 1  0
+[INFO 09:28:14] root Runing batch
+[INFO 09:28:26] root Get batch
+[INFO 09:28:26] root episode 11168 Inserted
+[INFO 09:28:26] my_main ================ MetaEpoch: 11200 ================
+[INFO 09:28:26] my_main Time passed: 33 minutes, 21 seconds
+[INFO 09:28:26] my_main Status: [0, 0, 0, 0]
+[INFO 09:28:26] my_main Chosen Teammate: 2  1
+[INFO 09:28:26] root Runing batch
+[INFO 09:28:36] root Get batch
+[INFO 09:28:36] root episode 11200 Inserted
+[INFO 09:28:36] my_main ================ MetaEpoch: 11232 ================
+[INFO 09:28:36] my_main Time passed: 33 minutes, 31 seconds
+[INFO 09:28:36] my_main Status: [0, 0, 0, 0]
+[INFO 09:28:36] my_main Chosen Teammate: 3  3
+[INFO 09:28:36] root Runing batch
+[INFO 09:28:49] root Get batch
+[INFO 09:28:49] root episode 11232 Inserted
+[INFO 09:28:51] root Trajectories saved to saves/buffer_11264.pkl.
+[INFO 09:28:51] my_main ================ MetaEpoch: 11264 ================
+[INFO 09:28:51] my_main Time passed: 33 minutes, 46 seconds
+[INFO 09:28:51] my_main Status: [0, 0, 0, 0]
+[INFO 09:28:51] my_main Chosen Teammate: 0  2
+[INFO 09:28:51] root Runing batch
+[INFO 09:29:06] root Get batch
+[INFO 09:29:06] root episode 11264 Inserted
+[INFO 09:29:06] my_main ================ MetaEpoch: 11296 ================
+[INFO 09:29:06] my_main Time passed: 34 minutes, 1 seconds
+[INFO 09:29:06] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:06] my_main Chosen Teammate: 1  0
+[INFO 09:29:06] root Runing batch
+[INFO 09:29:15] root Get batch
+[INFO 09:29:15] root episode 11296 Inserted
+[INFO 09:29:15] my_main ================ MetaEpoch: 11328 ================
+[INFO 09:29:15] my_main Time passed: 34 minutes, 11 seconds
+[INFO 09:29:15] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:15] my_main Chosen Teammate: 2  1
+[INFO 09:29:15] root Runing batch
+[INFO 09:29:28] root Get batch
+[INFO 09:29:28] root episode 11328 Inserted
+[INFO 09:29:28] my_main ================ MetaEpoch: 11360 ================
+[INFO 09:29:28] my_main Time passed: 34 minutes, 23 seconds
+[INFO 09:29:28] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:28] my_main Chosen Teammate: 3  3
+[INFO 09:29:28] root Runing batch
+[INFO 09:29:39] root Get batch
+[INFO 09:29:39] root episode 11360 Inserted
+[INFO 09:29:39] my_main ================ MetaEpoch: 11392 ================
+[INFO 09:29:39] my_main Time passed: 34 minutes, 35 seconds
+[INFO 09:29:39] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:39] my_main Chosen Teammate: 0  2
+[INFO 09:29:39] root Runing batch
+[INFO 09:29:46] root Get batch
+[INFO 09:29:46] root episode 11392 Inserted
+[INFO 09:29:46] my_main ================ MetaEpoch: 11424 ================
+[INFO 09:29:46] my_main Time passed: 34 minutes, 41 seconds
+[INFO 09:29:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:46] my_main Chosen Teammate: 1  0
+[INFO 09:29:46] root Runing batch
+[INFO 09:29:50] root Get batch
+[INFO 09:29:50] root episode 11424 Inserted
+[INFO 09:29:50] my_main ================ MetaEpoch: 11456 ================
+[INFO 09:29:50] my_main Time passed: 34 minutes, 46 seconds
+[INFO 09:29:50] my_main Status: [0, 0, 0, 0]
+[INFO 09:29:50] my_main Chosen Teammate: 2  1
+[INFO 09:29:50] root Runing batch
+[INFO 09:30:00] root Get batch
+[INFO 09:30:00] root episode 11456 Inserted
+[INFO 09:30:00] my_main ================ MetaEpoch: 11488 ================
+[INFO 09:30:00] my_main Time passed: 34 minutes, 55 seconds
+[INFO 09:30:00] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:00] my_main Chosen Teammate: 3  3
+[INFO 09:30:00] root Runing batch
+[INFO 09:30:10] root Get batch
+[INFO 09:30:10] root episode 11488 Inserted
+[INFO 09:30:10] my_main ================ MetaEpoch: 11520 ================
+[INFO 09:30:10] my_main Time passed: 35 minutes, 6 seconds
+[INFO 09:30:10] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:10] my_main Chosen Teammate: 0  2
+[INFO 09:30:10] root Runing batch
+[INFO 09:30:20] root Get batch
+[INFO 09:30:20] root episode 11520 Inserted
+[INFO 09:30:20] my_main ================ MetaEpoch: 11552 ================
+[INFO 09:30:20] my_main Time passed: 35 minutes, 16 seconds
+[INFO 09:30:20] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:20] my_main Chosen Teammate: 1  0
+[INFO 09:30:20] root Runing batch
+[INFO 09:30:30] root Get batch
+[INFO 09:30:30] root episode 11552 Inserted
+[INFO 09:30:30] my_main ================ MetaEpoch: 11584 ================
+[INFO 09:30:30] my_main Time passed: 35 minutes, 25 seconds
+[INFO 09:30:30] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:30] my_main Chosen Teammate: 2  1
+[INFO 09:30:30] root Runing batch
+[INFO 09:30:37] root Get batch
+[INFO 09:30:37] root episode 11584 Inserted
+[INFO 09:30:37] my_main ================ MetaEpoch: 11616 ================
+[INFO 09:30:37] my_main Time passed: 35 minutes, 33 seconds
+[INFO 09:30:37] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:37] my_main Chosen Teammate: 3  3
+[INFO 09:30:37] root Runing batch
+[INFO 09:30:42] root Get batch
+[INFO 09:30:42] root episode 11616 Inserted
+[INFO 09:30:42] my_main ================ MetaEpoch: 11648 ================
+[INFO 09:30:42] my_main Time passed: 35 minutes, 37 seconds
+[INFO 09:30:42] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:42] my_main Chosen Teammate: 0  2
+[INFO 09:30:42] root Runing batch
+[INFO 09:30:46] root Get batch
+[INFO 09:30:46] root episode 11648 Inserted
+[INFO 09:30:46] my_main ================ MetaEpoch: 11680 ================
+[INFO 09:30:46] my_main Time passed: 35 minutes, 42 seconds
+[INFO 09:30:46] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:46] my_main Chosen Teammate: 1  0
+[INFO 09:30:46] root Runing batch
+[INFO 09:30:52] root Get batch
+[INFO 09:30:52] root episode 11680 Inserted
+[INFO 09:30:52] my_main ================ MetaEpoch: 11712 ================
+[INFO 09:30:52] my_main Time passed: 35 minutes, 47 seconds
+[INFO 09:30:52] my_main Status: [0, 0, 0, 0]
+[INFO 09:30:52] my_main Chosen Teammate: 2  1
+[INFO 09:30:52] root Runing batch
+[INFO 09:30:57] root Get batch
+[INFO 09:30:57] root episode 11712 Inserted
+[INFO 09:30:57] my_main ================ MetaEpoch: 11744 ================
+[INFO 09:30:57] my_main Time passed: 35 minutes, 52 seconds
+[INFO 09:30:57] my_main Sta

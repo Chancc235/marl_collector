@@ -1,0 +1,37 @@
+/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/gym/logger.py:34: UserWarning: [33mWARN: Overriding environment Overcooked-v0[0m
+  warnings.warn(colorize("%s: %s" % ("WARN", msg % args), "yellow"))
+[DEBUG 04:50:00] git.cmd Popen(['git', 'version'], cwd=/home/cike/marl_collector, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 04:50:00] git.cmd Popen(['git', 'version'], cwd=/home/cike/marl_collector, stdin=None, shell=False, universal_newlines=False)
+[DEBUG 04:50:00] git.util Failed checking if running in CYGWIN due to: FileNotFoundError(2, "No such file or directory: '/usr/bin/uname'")
+[DEBUG 04:50:00] git.cmd Popen(['git', 'diff', '--cached', '--abbrev=40', '--full-index', '--raw'], cwd=/home/cike/marl_collector, stdin=None, shell=False, universal_newlines=False)
+/home/cike/marl_collector/src/envs/overcooked/overcooked_ai
+/home/cike/marl_collector/src/envs/overcooked/overcooked_ai
+pygame 2.6.1 (SDL 2.28.4, Python 3.7.12)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Traceback (most recent call last):
+  File "src/meta_main.py", line 27, in <module>
+    ex = Experiment("pymarl")
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/experiment.py", line 125, in __init__
+    save_git_info=save_git_info,
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/ingredient.py", line 76, in __init__
+    _caller_globals, save_git_info, self.base_dir
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/dependencies.py", line 725, in gather_sources_and_dependencies
+    experiment_path, main = get_main_file(globs, save_git_info)
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/dependencies.py", line 596, in get_main_file
+    main = Source.create(globs.get("__file__"), save_git_info)
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/dependencies.py", line 460, in create
+    repo, commit, is_dirty = get_commit_if_possible(main_file, save_git_info)
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/sacred/dependencies.py", line 440, in get_commit_if_possible
+    is_dirty = repo.is_dirty()
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/git/repo/base.py", line 949, in is_dirty
+    if osp.isfile(self.index.path) and len(self.git.diff("--cached", *default_args)):
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/git/cmd.py", line 986, in <lambda>
+    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/git/cmd.py", line 1598, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/home/cike/anaconda3/envs/pymarl2/lib/python3.7/site-packages/git/cmd.py", line 1388, in execute
+    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)
+git.exc.GitCommandError: Cmd('git') failed due to: exit code(128)
+  cmdline: git diff --cached --abbrev=40 --full-index --raw
+  stderr: 'error: bad signature
+fatal: index file corrupt'

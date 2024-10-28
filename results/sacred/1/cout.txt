@@ -1,0 +1,559 @@
+[INFO 15:22:35] pymarl Running command 'my_main'
+[INFO 15:22:35] pymarl Started run with ID "1"
+[DEBUG 15:22:35] pymarl Starting Heartbeat
+[DEBUG 15:22:35] my_main Started
+[INFO 15:22:35] my_main Experiment Parameters:
+[INFO 15:22:35] my_main 
+
+{   'agent': 'rnn',
+    'batch_size': 1024,
+    'batch_size_run': 32,
+    'buffer_cpu_only': True,
+    'buffer_size': 32,
+    'checkpoint_path': '',
+    'critic_lr': 0.0005,
+    'cur_episodes': 32,
+    'env': 'lbf',
+    'env_args': {   'field_size': 20,
+                    'force_coop': True,
+                    'is_print': False,
+                    'max_food': 2,
+                    'need_render': False,
+                    'partiteammate_observe': False,
+                    'players': 2,
+                    'remote': False,
+                    'render_output_path': 'logs',
+                    'seed': 1024,
+                    'sight': 2},
+    'episodes_per_teammate': 64,
+    'epsilon_anneal_time': 1000000,
+    'epsilon_finish': 0.05,
+    'epsilon_start': 1.0,
+    'evaluate': False,
+    'exp_name': 'stage1_LBF',
+    'gamma': 0.99,
+    'grad_norm_clip': 10,
+    'ind': 'stage1',
+    'inner_loop_episodes': 128,
+    'label': 'default_label',
+    'learner_log_interval': 10000,
+    'load_step': 0,
+    'local_results_path': 'results',
+    'local_saves_path': 'saves',
+    'log_interval': 10000,
+    'lr': 0.0005,
+    'mac': 'basic',
+    'meta_update_times': 8,
+    'n_sub_modules': 4,
+    'obs_agent_id': True,
+    'obs_last_action': True,
+    'optim_alpha': 0.99,
+    'optim_eps': 1e-05,
+    'optimize_meta': False,
+    'points_per_teammate': 64,
+    'pop': 'stage1',
+    'population_alg': 'vdn',
+    'population_size': 4,
+    'repeat_id': 1,
+    'rnn_hidden_dim': 64,
+    'runner': 'meta',
+    'runner_log_interval': 10000,
+    'save_BR': False,
+    'save_BR_episodes': 2048,
+    'save_model': False,
+    'save_model_interval': 2000000,
+    'save_population': True,
+    'save_population_episodes': 4096,
+    'save_replay': False,
+    'seed': 635713538,
+    't_max': 5000000,
+    'test_greedy': True,
+    'test_interval': 10000,
+    'test_nepisode': 32,
+    'test_percent': 0.2,
+    'train_test_split': False,
+    'use_cuda': True,
+    'use_history': False,
+    'use_tensorboard': True,
+    'z_dim': 8}
+
+Process Process-1:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-8:
+Process Process-6:
+Process Process-5:
+Process Process-3:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-7:
+Process Process-13:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-12:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-16:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-2:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-18:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-15:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-27:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-24:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-30:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-4:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-23:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-25:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-20:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-19:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-11:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-9:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-10:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-17:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-26:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-21:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-14:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-29:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-22:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-28:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-31:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
+Process Process-32:
+Traceback (most recent call last):
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/cike/marl_collector/src/runners/meta_runner.py", line 17, in env_worker
+    env = env_fn.x()
+  File "/home/cike/marl_collector/src/envs/lbf/foraging.py", line 74, in __init__
+    self.env = gym.make(env_id)
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 652, in make
+    raise e
+  File "/home/cike/anaconda3/envs/pymarl/lib/python3.7/site-packages/gym/envs/registration.py", line 640, in make
+    env = env_creator(**_kwargs)
+TypeError: __init__() got an unexpected keyword argument 'max_food'
